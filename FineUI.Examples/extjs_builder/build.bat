@@ -134,4 +134,4 @@ type version.txt > ..\extjs\version.txt
 
 del _f /Q
 
-
+pause & exit

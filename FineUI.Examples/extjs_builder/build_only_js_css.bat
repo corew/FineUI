@@ -122,5 +122,5 @@ type extjs_source_all\ext-theme-neptune.js > ..\extjs\ext-theme-neptune.js
 
 del _f /Q
 
-
+pause & exit
 
