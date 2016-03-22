@@ -48,6 +48,16 @@ F.confirm = function () {
     F.util.confirm.apply(null, arguments);
 };
 
+// add by wz
+F.show = function () {
+    F.util.show.apply(null, arguments);
+};
+
+// add by wz
+F.notify = function () {
+    F.util.notify.apply(null, arguments);
+};
+
 F.toggle = function (el, className) {
     Ext.get(el).toggleCls(className);
 };
@@ -1298,6 +1308,65 @@ Ext.onReady(function () {
             return icon;
         },
 
+        // 提示框图标
+        getNotifyIcon: function (iconShortName) {
+            var icon = 'ux-notification-icon-info';
+            if (iconShortName === 'error') {
+                icon = 'ux-notification-icon-error';
+            } else if (iconShortName === 'success') {
+                icon = 'ux-notification-icon-success';
+            } else if (iconShortName === 'info') {
+                icon = 'ux-notification-icon-information';
+            } else if (iconShortName === 'warn') {
+                icon = 'ux-notification-icon-warn';
+            }
+            return icon;
+        },
+
+        // 消息框文字
+        // add by wz
+        getButtonText: function (buttonsShortName, okText, cancelText, yesText, noText) {
+            var buttonText = Ext.MessageBox.buttonText.ok;
+            if (buttonsShortName === '_cancel') {
+                buttonText = { cancel: cancelText || Ext.MessageBox.buttonText.cancel };
+            } else if (buttonsShortName === '_no') {
+                buttonText = { no: noText || Ext.MessageBox.buttonText.no };
+            } else if (buttonsShortName === '_ok') {
+                buttonText = { ok: okText || Ext.MessageBox.buttonText.ok };
+            } else if (buttonsShortName === '_ok_cancel') {
+                buttonText = { cancel: cancelText || Ext.MessageBox.buttonText.cancel, ok: okText || Ext.MessageBox.buttonText.ok };
+            } else if (buttonsShortName === '_yes') {
+                buttonText = { yes: yesText || Ext.MessageBox.buttonText.yes };
+            } else if (buttonsShortName === '_yes_no') {
+                buttonText = { yes: yesText || Ext.MessageBox.buttonText.yes, no: noText || Ext.MessageBox.buttonText.no };
+            } else if (buttonsShortName === '_yes_no_cancel') {
+                buttonText = { yes: yesText || Ext.MessageBox.buttonText.yes, no: noText || Ext.MessageBox.buttonText.no, cancel: cancelText || Ext.MessageBox.buttonText.cancel };
+            }
+            return buttonText;
+        },
+
+        // 消息框按钮样式
+        // add by wz
+        getMessageBoxButtons: function (buttonsShortName) {
+            var buttons = Ext.MessageBox.OK;
+            if (buttonsShortName === '_cancel') {
+                buttons = Ext.MessageBox.CANCEL;
+            } else if (buttonsShortName === '_no') {
+                buttons = Ext.MessageBox.NO;
+            } else if (buttonsShortName === '_ok') {
+                buttons = Ext.MessageBox.OK;
+            } else if (buttonsShortName === '_ok_cancel') {
+                buttons = Ext.MessageBox.OKCANCEL;
+            } else if (buttonsShortName === '_yes') {
+                buttons = Ext.MessageBox.YES;
+            } else if (buttonsShortName === '_yes_no') {
+                buttons = Ext.MessageBox.YESNO;
+            } else if (buttonsShortName === '_yes_no_cancel') {
+                buttons = Ext.MessageBox.YESNOCANCEL;
+            }
+            return buttons;
+        },
+
         // 弹出Alert对话框
         alert: function (target, message, title, messageIcon, ok) { // 老的顺序：msg, title, icon, okscript
             var args = [].slice.call(arguments, 0);
@@ -1403,7 +1472,137 @@ Ext.onReady(function () {
             });
         },
 
+        // 提示框
+        // add by wz
+        notify: function (target, message, title, notifyIcon) {
+            var args = [].slice.call(arguments, 0); //$.makeArray(arguments);
 
+            var options = args[0];
+            if (typeof (options) === 'string') {
+                if (!/^_self|_parent|_top$/.test(args[0])) {
+                    args.splice(0, 0, '_self');
+                }
+                options = {
+                    target: args[0],
+                    message: args[1],
+                    title: args[2],
+                    type: args[3]
+                };
+            }
+
+            var wnd = F.util.getTargetWindow(options.target);
+            if (!F.canAccess(wnd)) {
+                return; // return
+            }
+
+            var icon = F.util.getNotifyIcon(options.notifyIcon);
+            wnd.Ext.create('widget.uxNotification', {
+                title: options.title,
+                position: 'br',
+                cls: 'ux-notification-light',
+                iconCls: icon,
+                spacing: 20,
+                html: options.message,
+                slideInDuration: 800,
+                slideBackDuration: 1500,
+                autoCloseDelay: 4000,
+                slideInAnimation: 'elasticIn',
+                slideBackAnimation: 'elasticIn'
+            }).show();
+        },
+
+        // 自定义对话框
+        // add by wz
+        show: function (target, message, title, messageIcon,
+            okScript, cancelScript, yesScript, noScript,
+            buttonsShortName,
+            okText, cancelText, yesText, noText) {
+
+            var args = [].slice.call(arguments, 0); //$.makeArray(arguments);
+
+            var options = args[0];
+            if (typeof (options) === 'string') {
+                if (!/^_self|_parent|_top$/.test(args[0])) {
+                    args.splice(0, 0, '_self');
+                }
+                options = {
+                    target: args[0],
+                    message: args[1],
+                    title: args[2],
+                    messageIcon: args[3],
+                    okScript: args[4],
+                    cancelScript: args[5],
+                    yesScript: args[6],
+                    noScript: args[7],
+                    buttonsShortName: args[8],
+                    okText: args[9],
+                    cancelText: args[10],
+                    yesText: args[11],
+                    noText: args[12]
+                };
+            }
+
+            var wnd = F.util.getTargetWindow(options.target);
+            if (!F.canAccess(wnd)) {
+                return; // return
+            }
+
+            var icon = F.util.getMessageBoxIcon(options.messageIcon);
+            var buttonText = F.util.getButtonText(options.buttonsShortName, options.okText, options.cancelText, options.yesText, options.noText);
+            var buttons = F.util.getMessageBoxButtons(options.buttonsShortName);
+            wnd.Ext.MessageBox.show({
+                cls: options.cls || '',
+                title: options.title || F.util.confirmTitle,
+                minWidth: 260,
+                msg: options.message,
+                buttons: buttons,
+                buttonText: buttonText,
+                icon: icon,
+                fn: function (btn) {
+                    if (btn == 'cancel') {
+                        if (options.cancelScript) {
+                            if (typeof (options.cancelScript) === 'string') {
+                                new Function(options.cancelScript)();
+                            } else {
+                                options.cancelScript.apply(wnd);
+                            }
+                        } else {
+                            return false;
+                        }
+                    } else if (btn == 'ok') {
+                        if (options.okScript) {
+                            if (typeof (options.okScript) === 'string') {
+                                new Function(options.okScript)();
+                            } else {
+                                options.okScript.apply(wnd);
+                            }
+                        } else {
+                            return false;
+                        }
+                    } else if (btn == 'yes') {
+                        if (options.yesScript) {
+                            if (typeof (options.yesScript) === 'string') {
+                                new Function(options.yesScript)();
+                            } else {
+                                options.yesScript.apply(wnd);
+                            }
+                        } else {
+                            return false;
+                        }
+                    } else if (btn == 'no') {
+                        if (options.noScript) {
+                            if (typeof (options.noScript) === 'string') {
+                                new Function(options.noScript)();
+                            } else {
+                                options.noScript.apply(wnd);
+                            }
+                        } else {
+                            return false;
+                        }
+                    } else return false;
+                }
+            });
+        },
 
         summaryType: function (gridId) {
             return function (records, dataIndex) {

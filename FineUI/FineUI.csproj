@@ -93,6 +93,8 @@
     <Compile Include="Business\Enums\ToolbarAlign.cs" />
     <Compile Include="Business\Util\FState.cs" />
     <Compile Include="Business\Util\DateUtil.cs" />
+    <Compile Include="StaticClass\MessageBox.cs" />
+    <Compile Include="StaticClass\Notify.cs" />
     <Compile Include="WebControls\ControlBase.CPHConnector\CPHConnector.cs" />
     <Compile Include="WebControls\ControlBase.PageManager\CustomEventArgs.cs" />
     <Compile Include="WebControls\Field.CheckBox\EventArgs\CheckedEventArgs.cs" />
@@ -215,9 +217,11 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Business\Editor\GridColumnsEditor.cs" />
+    <Compile Include="WebControls\PanelBase.Grid\EventArgs\GridGroupEventArgs.cs" />
     <Compile Include="WebControls\PanelBase.Grid\EventArgs\GridRowSelectEventArgs.cs" />
     <Compile Include="WebControls\PanelBase.Grid\EventArgs\GridAfterEditEventArgs.cs" />
     <Compile Include="WebControls\PanelBase.Grid\GridColumn\BaseField.cs" />
+    <Compile Include="WebControls\PanelBase.Grid\GridColumn\GridColumn\GridColumnDataType.cs" />
     <Compile Include="WebControls\PanelBase.Grid\GridColumn\RenderField\RenderField.cs" />
     <Compile Include="WebControls\PanelBase.Grid\GridColumn\RenderField\RenderCheckField.cs" />
     <Compile Include="WebControls\PanelBase.Grid\GridColumn\RenderField\RenderBaseField.cs" />
