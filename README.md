@@ -34,7 +34,7 @@ Changes
   + add reference for `Notification.js` and `Notification.css` in `build.bat` and `build_only_css.bat`
 
 + Group & Summary
-  + do use  `ext-4.2.2` or above ( https://www.sencha.com/forum/showthread.php?264961-Grid-Grouping-Bug )
+  + ext-4.2.1 have a bug here, see https://www.sencha.com/forum/showthread.php?264961-Grid-Grouping-Bug 
   + add `EnableGroup` in `Grid.cs` 
   + add `GridGroupEventArgs`
   + add `SummaryType` and `SummaryRenderer` in `GridColumn.cs`
