@@ -234,3 +234,9 @@ _Pvt_Extensions
 
 # FAKE - F# Make
 .fake/
+
+# user defined
+extjs_source_all
+FineUI.Examples/extjs
+FineUI.Examples/res/icon
+FineUI.Examples/res/images
