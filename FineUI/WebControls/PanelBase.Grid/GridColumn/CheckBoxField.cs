@@ -1,18 +1,18 @@
-
+ï»¿
 #region Comment
 
 /*
- * Project£º    FineUI
+ * Projectï¼š    FineUI
  * 
  * FileName:    CheckBoxField.cs
  * CreatedOn:   2008-05-27
  * CreatedBy:   30372245@qq.com
  * 
  * 
- * Description£º
+ * Descriptionï¼š
  *      ->
  *   
- * History£º
+ * Historyï¼š
  *      ->
  * 
  * 
@@ -38,7 +38,7 @@ using System.Collections.Generic;
 namespace FineUI
 {
     /// <summary>
-    /// ±í¸ñ¸´Ñ¡¿òÁĞ
+    /// è¡¨æ ¼å¤é€‰æ¡†åˆ—
     /// </summary>
     [ToolboxItem(false)]
     [ParseChildren(true)]
@@ -50,11 +50,11 @@ namespace FineUI
         private bool _enabled = true;
 
         /// <summary>
-        /// ÊÇ·ñ¿ÉÓÃ£¨Ö»ÔÚRenderAsStaticField=falseÊ±ÓĞĞ§£©
+        /// æ˜¯å¦å¯ç”¨ï¼ˆåªåœ¨RenderAsStaticField=falseæ—¶æœ‰æ•ˆï¼‰
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue(true)]
-        [Description("ÊÇ·ñ¿ÉÓÃ£¨Ö»ÔÚRenderAsStaticField=falseÊ±ÓĞĞ§£©")]
+        [Description("æ˜¯å¦å¯ç”¨ï¼ˆåªåœ¨RenderAsStaticField=falseæ—¶æœ‰æ•ˆï¼‰")]
         public override bool Enabled
         {
             get
@@ -70,11 +70,11 @@ namespace FineUI
         private bool _autoPostBack = false;
 
         /// <summary>
-        /// ÊÇ·ñ×Ô¶¯»Ø·¢£¨Ö»ÔÚRenderAsStaticField=falseÊ±ÓĞĞ§£©
+        /// æ˜¯å¦è‡ªåŠ¨å›å‘ï¼ˆåªåœ¨RenderAsStaticField=falseæ—¶æœ‰æ•ˆï¼‰
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue(false)]
-        [Description("ÊÇ·ñ×Ô¶¯»Ø·¢£¨Ö»ÔÚRenderAsStaticField=false²¢ÇÒShowHeaderCheckBox=falseÊ±ÓĞĞ§£©")]
+        [Description("æ˜¯å¦è‡ªåŠ¨å›å‘ï¼ˆåªåœ¨RenderAsStaticField=falseå¹¶ä¸”ShowHeaderCheckBox=falseæ—¶æœ‰æ•ˆï¼‰")]
         public bool AutoPostBack
         {
             get
@@ -91,11 +91,11 @@ namespace FineUI
         private string _dataField = "";
 
         /// <summary>
-        /// ×Ö¶ÎÃû³Æ
+        /// å­—æ®µåç§°
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue("")]
-        [Description("×Ö¶ÎÃû³Æ")]
+        [Description("å­—æ®µåç§°")]
         public string DataField
         {
             get
@@ -112,11 +112,11 @@ namespace FineUI
         private bool _renderAsStaticField = true;
 
         /// <summary>
-        /// äÖÈ¾Îª¾²Ì¬Í¼Æ¬£¬·ñÔòäÖÈ¾Îª¿É±à¼­µÄ¸´Ñ¡¿ò
+        /// æ¸²æŸ“ä¸ºé™æ€å›¾ç‰‡ï¼Œå¦åˆ™æ¸²æŸ“ä¸ºå¯ç¼–è¾‘çš„å¤é€‰æ¡†
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue(true)]
-        [Description("äÖÈ¾Îª¾²Ì¬Í¼Æ¬£¬·ñÔòäÖÈ¾Îª¿É±à¼­µÄ¸´Ñ¡¿ò")]
+        [Description("æ¸²æŸ“ä¸ºé™æ€å›¾ç‰‡ï¼Œå¦åˆ™æ¸²æŸ“ä¸ºå¯ç¼–è¾‘çš„å¤é€‰æ¡†")]
         public bool RenderAsStaticField
         {
             get
@@ -134,11 +134,11 @@ namespace FineUI
 
 
         /// <summary>
-        /// ÏÔÊ¾ÁĞÍ·¸´Ñ¡¿ò£¨Ö»ÔÚRenderAsStaticField=falseÊ±ÓĞĞ§£©
+        /// æ˜¾ç¤ºåˆ—å¤´å¤é€‰æ¡†ï¼ˆåªåœ¨RenderAsStaticField=falseæ—¶æœ‰æ•ˆï¼‰
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue(false)]
-        [Description("ÏÔÊ¾ÁĞÍ·¸´Ñ¡¿ò£¨Ö»ÔÚRenderAsStaticField=falseÊ±ÓĞĞ§£©")]
+        [Description("æ˜¾ç¤ºåˆ—å¤´å¤é€‰æ¡†ï¼ˆåªåœ¨RenderAsStaticField=falseæ—¶æœ‰æ•ˆï¼‰")]
         public bool ShowHeaderCheckBox
         {
             get
@@ -169,11 +169,11 @@ namespace FineUI
         private object _enableAjax = null;
 
         /// <summary>
-        /// ÊÇ·ñÆôÓÃAJAX
+        /// æ˜¯å¦å¯ç”¨AJAX
         /// </summary>
         [Category(CategoryName.BASEOPTIONS)]
         [DefaultValue(true)]
-        [Description("ÊÇ·ñÆôÓÃAJAX")]
+        [Description("æ˜¯å¦å¯ç”¨AJAX")]
         public override bool EnableAjax
         {
             get
@@ -204,11 +204,11 @@ namespace FineUI
         private string _commandName = "";
 
         /// <summary>
-        /// ÃüÁîÃû³Æ
+        /// å‘½ä»¤åç§°
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue("")]
-        [Description("ÃüÁîÃû³Æ")]
+        [Description("å‘½ä»¤åç§°")]
         public string CommandName
         {
             get
@@ -224,11 +224,11 @@ namespace FineUI
         private string _commandArgument = "";
 
         /// <summary>
-        /// ÃüÁî²ÎÊı
+        /// å‘½ä»¤å‚æ•°
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue("")]
-        [Description("ÃüÁî²ÎÊı")]
+        [Description("å‘½ä»¤å‚æ•°")]
         public string CommandArgument
         {
             get
@@ -297,7 +297,7 @@ namespace FineUI
         }
 
         /// <summary>
-        /// È¡µÃµ¥Ôª¸ñµÄÊı¾İ
+        /// å–å¾—å•å…ƒæ ¼çš„æ•°æ®
         /// </summary>
         /// <param name="row"></param>
         /// <param name="checkState"></param>
@@ -330,7 +330,7 @@ namespace FineUI
                 {
                     string paramStr = String.Format("Command${0}${1}${2}${3}", row.RowID, ColumnID, CommandName.Replace("'", "\""), CommandArgument.Replace("'", "\""));
                     
-                    // ÑÓ³ÙÖ´ĞĞ£¬È·±£µ±Ç°¸´Ñ¡¿òµÄ×´Ì¬ÒÑ¾­¸Ä±ä
+                    // å»¶è¿Ÿæ‰§è¡Œï¼Œç¡®ä¿å½“å‰å¤é€‰æ¡†çš„çŠ¶æ€å·²ç»æ”¹å˜
                     string postBackReference = JsHelper.GetDeferScript(Grid.GetPostBackEventReference(paramStr, EnableAjax), 0);
 
                     // string onClickScript = String.Format("{0}_checkbox{1}(event,this,{2});", Grid.XID, ColumnIndex, row.RowIndex);
@@ -410,10 +410,10 @@ namespace FineUI
         #region GetCheckedState/SetCheckedState
 
         /// <summary>
-        /// ±¾ĞĞµÄ¸´Ñ¡¿òÊÇ·ñ´¦ÓÚÑ¡ÖĞ×´Ì¬
+        /// æœ¬è¡Œçš„å¤é€‰æ¡†æ˜¯å¦å¤„äºé€‰ä¸­çŠ¶æ€
         /// </summary>
-        /// <param name="rowIndex">ĞĞË÷Òı</param>
-        /// <returns>Ñ¡ÖĞ×´Ì¬</returns>
+        /// <param name="rowIndex">è¡Œç´¢å¼•</param>
+        /// <returns>é€‰ä¸­çŠ¶æ€</returns>
         public bool GetCheckedState(int rowIndex)
         {
             GridRow row = this.Grid.Rows[rowIndex];
@@ -422,17 +422,17 @@ namespace FineUI
         }
 
         /// <summary>
-        /// ÉèÖÃ±¾ÁĞ¸´Ñ¡¿òµÄÑ¡ÖĞ×´Ì¬
+        /// è®¾ç½®æœ¬åˆ—å¤é€‰æ¡†çš„é€‰ä¸­çŠ¶æ€
         /// </summary>
-        /// <param name="rowIndex">ĞĞË÷Òı</param>
-        /// <param name="isChecked">ÊÇ·ñÑ¡ÖĞ</param>
+        /// <param name="rowIndex">è¡Œç´¢å¼•</param>
+        /// <param name="isChecked">æ˜¯å¦é€‰ä¸­</param>
         public void SetCheckedState(int rowIndex, bool isChecked)
         {
             GridRow row = this.Grid.Rows[rowIndex];
 
             row.States[ColumnIndex] = isChecked;
 
-            // ¸üĞÂÁĞ×´Ì¬µÄÍ¬Ê±£¬Òª¼Ç×Å¸üĞÂÁĞäÖÈ¾ºóµÄHTML
+            // æ›´æ–°åˆ—çŠ¶æ€çš„åŒæ—¶ï¼Œè¦è®°ç€æ›´æ–°åˆ—æ¸²æŸ“åçš„HTML
             row.UpdateValuesAt(ColumnIndex);
         } 
 
@@ -441,7 +441,7 @@ namespace FineUI
         #region OnFirstPreRender
 
         /// <summary>
-        /// äÖÈ¾ HTML Ö®Ç°µ÷ÓÃ£¨Ò³ÃæµÚÒ»´Î¼ÓÔØ»òÕßÆÕÍ¨»Ø·¢£©
+        /// æ¸²æŸ“ HTML ä¹‹å‰è°ƒç”¨ï¼ˆé¡µé¢ç¬¬ä¸€æ¬¡åŠ è½½æˆ–è€…æ™®é€šå›å‘ï¼‰
         /// </summary>
         protected override void OnFirstPreRender()
         {

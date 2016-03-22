@@ -1,18 +1,18 @@
-
+ï»¿
 #region Comment
 
 /*
- * Project£º    FineUI
+ * Projectï¼š    FineUI
  * 
  * FileName:    RowNumberField.cs
  * CreatedOn:   2013-09-23
  * CreatedBy:   30372245@qq.com
  * 
  * 
- * Description£º
+ * Descriptionï¼š
  *      ->
  *   
- * History£º
+ * Historyï¼š
  *      ->
  * 
  * 
@@ -37,7 +37,7 @@ using System.Reflection;
 namespace FineUI
 {
     /// <summary>
-    /// ±í¸ñÊı¾İ°ó¶¨ÁĞ
+    /// è¡¨æ ¼æ•°æ®ç»‘å®šåˆ—
     /// </summary>
     [ToolboxItem(false)]
     [ParseChildren(true)]
@@ -48,11 +48,11 @@ namespace FineUI
 
         private bool _enableHeaderMenu = false;
         /// <summary>
-        /// ÆôÓÃ±íÍ·²Ëµ¥
+        /// å¯ç”¨è¡¨å¤´èœå•
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue(false)]
-        [Description("ÆôÓÃ±íÍ·²Ëµ¥")]
+        [Description("å¯ç”¨è¡¨å¤´èœå•")]
         public override bool EnableHeaderMenu
         {
             get
@@ -68,11 +68,11 @@ namespace FineUI
 
         private bool _allowHideColumn = false;
         /// <summary>
-        /// ÊÇ·ñÔÊĞíÒş²ØÁĞ
+        /// æ˜¯å¦å…è®¸éšè—åˆ—
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue(false)]
-        [Description("ÊÇ·ñÔÊĞíÒş²ØÁĞ")]
+        [Description("æ˜¯å¦å…è®¸éšè—åˆ—")]
         public override bool EnableColumnHide
         {
             get
@@ -88,11 +88,11 @@ namespace FineUI
 
         private bool _enablePagingNumber = false;
         /// <summary>
-        /// ÊÇ·ñÆôÓÃ·ÖÒ³ĞĞºÅ
+        /// æ˜¯å¦å¯ç”¨åˆ†é¡µè¡Œå·
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue(false)]
-        [Description("ÊÇ·ñÆôÓÃ·ÖÒ³ĞĞºÅ")]
+        [Description("æ˜¯å¦å¯ç”¨åˆ†é¡µè¡Œå·")]
         public bool EnablePagingNumber
         {
             get
@@ -119,7 +119,7 @@ namespace FineUI
         #region OnFirstPreRender
 
         /// <summary>
-        /// äÖÈ¾ HTML Ö®Ç°µ÷ÓÃ£¨Ò³ÃæµÚÒ»´Î¼ÓÔØ»òÕßÆÕÍ¨»Ø·¢£©
+        /// æ¸²æŸ“ HTML ä¹‹å‰è°ƒç”¨ï¼ˆé¡µé¢ç¬¬ä¸€æ¬¡åŠ è½½æˆ–è€…æ™®é€šå›å‘ï¼‰
         /// </summary>
         protected override void OnFirstPreRender()
         {

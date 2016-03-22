@@ -1,18 +1,18 @@
-
+ï»¿
 #region Comment
 
 /*
- * Project£º    FineUI
+ * Projectï¼š    FineUI
  * 
  * FileName:    GridCommandEventArgs.cs
  * CreatedOn:   2008-06-23
  * CreatedBy:   30372245@qq.com
  * 
  * 
- * Description£º
+ * Descriptionï¼š
  *      ->
  *   
- * History£º
+ * Historyï¼š
  *      ->
  * 
  * 
@@ -32,7 +32,7 @@ using System.Web.UI;
 namespace FineUI
 {
     /// <summary>
-    /// ±í¸ñĞĞÃüÁîÊÂ¼ş²ÎÊı
+    /// è¡¨æ ¼è¡Œå‘½ä»¤äº‹ä»¶å‚æ•°
     /// </summary>
     public class GridCommandEventArgs : EventArgs
     {
@@ -40,7 +40,7 @@ namespace FineUI
         private int _rowIndex;
 
         /// <summary>
-        /// ĞĞË÷Òı
+        /// è¡Œç´¢å¼•
         /// </summary>
         public int RowIndex
         {
@@ -50,7 +50,7 @@ namespace FineUI
         private string _rowID;
 
         /// <summary>
-        /// ĞĞID
+        /// è¡ŒID
         /// </summary>
         public string RowID
         {
@@ -62,7 +62,7 @@ namespace FineUI
         private int _columnIndex;
 
         /// <summary>
-        /// ÁĞË÷Òı
+        /// åˆ—ç´¢å¼•
         /// </summary>
         public int ColumnIndex
         {
@@ -74,7 +74,7 @@ namespace FineUI
         private string _columnID;
 
         /// <summary>
-        /// ÁĞID
+        /// åˆ—ID
         /// </summary>
         public string ColumnID
         {
@@ -86,7 +86,7 @@ namespace FineUI
         private string _commandName;
 
         /// <summary>
-        /// ÃüÁîÃû³Æ
+        /// å‘½ä»¤åç§°
         /// </summary>
         public string CommandName
         {
@@ -97,7 +97,7 @@ namespace FineUI
         private string _commandArgument;
 
         /// <summary>
-        /// ÃüÁî²ÎÊı
+        /// å‘½ä»¤å‚æ•°
         /// </summary>
         public string CommandArgument
         {
@@ -106,14 +106,14 @@ namespace FineUI
 
 
         /// <summary>
-        /// ¹¹Ôìº¯Êı
+        /// æ„é€ å‡½æ•°
         /// </summary>
-        /// <param name="rowIndex">ĞĞË÷Òı</param>
-        /// <param name="rowID">ĞĞID</param>
-        /// <param name="columnIndex">ÁĞË÷Òı</param>
-        /// <param name="columnID">ÁĞID</param>
-        /// <param name="commandName">ÃüÁîÃû³Æ</param>
-        /// <param name="commandArgument">ÃüÁî²ÎÊı</param>
+        /// <param name="rowIndex">è¡Œç´¢å¼•</param>
+        /// <param name="rowID">è¡ŒID</param>
+        /// <param name="columnIndex">åˆ—ç´¢å¼•</param>
+        /// <param name="columnID">åˆ—ID</param>
+        /// <param name="commandName">å‘½ä»¤åç§°</param>
+        /// <param name="commandArgument">å‘½ä»¤å‚æ•°</param>
         public GridCommandEventArgs(int rowIndex, string rowID, int columnIndex, string columnID, string commandName, string commandArgument)
         {
             _rowIndex = rowIndex;

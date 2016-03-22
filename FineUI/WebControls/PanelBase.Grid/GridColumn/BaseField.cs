@@ -1,18 +1,18 @@
-
+ï»¿
 #region Comment
 
 /*
- * Project£º    FineUI
+ * Projectï¼š    FineUI
  * 
  * FileName:    BaseField.cs
  * CreatedOn:   2013-05-05
  * CreatedBy:   30372245@qq.com
  * 
  * 
- * Description£º
+ * Descriptionï¼š
  *      ->
  *   
- * History£º
+ * Historyï¼š
  *      ->
  * 
  * 
@@ -39,7 +39,7 @@ using System.Web.UI.WebControls;
 namespace FineUI
 {
     /// <summary>
-    /// ±í¸ñÁĞ»ùÀà£¨³éÏóÀà£©
+    /// è¡¨æ ¼åˆ—åŸºç±»ï¼ˆæŠ½è±¡ç±»ï¼‰
     /// </summary>
     [ToolboxItem(false)]
     [ParseChildren(true)]
@@ -51,11 +51,11 @@ namespace FineUI
         private string _dataSimulateTreeLevelField = String.Empty;
 
         /// <summary>
-        /// ´ËÁĞÄ£ÄâÊ÷ÏÔÊ¾Ê±µÄ²ã´Î×Ö¶Î
+        /// æ­¤åˆ—æ¨¡æ‹Ÿæ ‘æ˜¾ç¤ºæ—¶çš„å±‚æ¬¡å­—æ®µ
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue("")]
-        [Description("´ËÁĞÄ£ÄâÊ÷ÏÔÊ¾Ê±µÄ²ã´Î×Ö¶Î")]
+        [Description("æ­¤åˆ—æ¨¡æ‹Ÿæ ‘æ˜¾ç¤ºæ—¶çš„å±‚æ¬¡å­—æ®µ")]
         public string DataSimulateTreeLevelField
         {
             get
@@ -76,11 +76,11 @@ namespace FineUI
         private string _tooltip = String.Empty;
 
         /// <summary>
-        /// ÌáÊ¾ÎÄ±¾
+        /// æç¤ºæ–‡æœ¬
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue("")]
-        [Description("ÌáÊ¾ÎÄ±¾")]
+        [Description("æç¤ºæ–‡æœ¬")]
         public string ToolTip
         {
             get
@@ -98,11 +98,11 @@ namespace FineUI
         private string _dataToolTipField = String.Empty;
 
         /// <summary>
-        /// ÌáÊ¾×Ö¶ÎÃû³Æ
+        /// æç¤ºå­—æ®µåç§°
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue("")]
-        [Description("ÌáÊ¾×Ö¶ÎÃû³Æ")]
+        [Description("æç¤ºå­—æ®µåç§°")]
         public string DataToolTipField
         {
             get
@@ -118,11 +118,11 @@ namespace FineUI
         private string _dataToolTipFormatString = String.Empty;
 
         /// <summary>
-        /// ÌáÊ¾×Ö¶Î¸ñÊ½»¯×Ö·û´®
+        /// æç¤ºå­—æ®µæ ¼å¼åŒ–å­—ç¬¦ä¸²
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue("")]
-        [Description("ÌáÊ¾×Ö¶Î¸ñÊ½»¯×Ö·û´®")]
+        [Description("æç¤ºå­—æ®µæ ¼å¼åŒ–å­—ç¬¦ä¸²")]
         public string DataToolTipFormatString
         {
             get
@@ -140,7 +140,7 @@ namespace FineUI
         #region GetTooltipString
 
         /// <summary>
-        /// È¡µÃÌáÊ¾×Ö·û´®
+        /// å–å¾—æç¤ºå­—ç¬¦ä¸²
         /// </summary>
         /// <param name="row"></param>
         /// <returns></returns>
@@ -181,7 +181,7 @@ namespace FineUI
         #region OnFirstPreRender
 
         ///// <summary>
-        ///// äÖÈ¾ HTML Ö®Ç°µ÷ÓÃ£¨Ò³ÃæµÚÒ»´Î¼ÓÔØ»òÕßÆÕÍ¨»Ø·¢£©
+        ///// æ¸²æŸ“ HTML ä¹‹å‰è°ƒç”¨ï¼ˆé¡µé¢ç¬¬ä¸€æ¬¡åŠ è½½æˆ–è€…æ™®é€šå›å‘ï¼‰
         ///// </summary>
         //protected override void OnFirstPreRender()
         //{
@@ -189,7 +189,7 @@ namespace FineUI
 
         //    if (this is TemplateField && (this as TemplateField).RenderAsRowExpander)
         //    {
-        //        // GridColumnÖĞÒÑ¾­´¦Àí¹ıÁË
+        //        // GridColumnä¸­å·²ç»å¤„ç†è¿‡äº†
         //    }
         //    else
         //    {

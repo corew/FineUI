@@ -1,18 +1,18 @@
-
+ï»¿
 #region Comment
 
 /*
- * Project£º    FineUI
+ * Projectï¼š    FineUI
  * 
  * FileName:    XmlAttributeMappingCollection.cs
  * CreatedOn:   2008-07-21
  * CreatedBy:   30372245@qq.com
  * 
  * 
- * Description£º
+ * Descriptionï¼š
  *      ->
  *   
- * History£º
+ * Historyï¼š
  *      ->
  * 
  * 
@@ -32,7 +32,7 @@ using System.Web.UI;
 namespace FineUI
 {
     /// <summary>
-    /// Ê÷½ÚµãµÄÊôĞÔÓ³Éä¼¯ºÏ
+    /// æ ‘èŠ‚ç‚¹çš„å±æ€§æ˜ å°„é›†åˆ
     /// </summary>
     public class XmlAttributeMappingCollection : Collection<XmlAttributeMapping>
     {

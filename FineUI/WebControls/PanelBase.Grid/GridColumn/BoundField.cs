@@ -1,18 +1,18 @@
-
+ï»¿
 #region Comment
 
 /*
- * Project£º    FineUI
+ * Projectï¼š    FineUI
  * 
  * FileName:    BoundField.cs
  * CreatedOn:   2008-05-27
  * CreatedBy:   30372245@qq.com
  * 
  * 
- * Description£º
+ * Descriptionï¼š
  *      ->
  *   
- * History£º
+ * Historyï¼š
  *      ->
  * 
  * 
@@ -37,7 +37,7 @@ using System.Reflection;
 namespace FineUI
 {
     /// <summary>
-    /// ±í¸ñÊı¾İ°ó¶¨ÁĞ
+    /// è¡¨æ ¼æ•°æ®ç»‘å®šåˆ—
     /// </summary>
     [ToolboxItem(false)]
     [ParseChildren(true)]
@@ -49,11 +49,11 @@ namespace FineUI
         private bool _enabled = true;
 
         /// <summary>
-        /// ÊÇ·ñ¿ÉÓÃ
+        /// æ˜¯å¦å¯ç”¨
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue(true)]
-        [Description("ÊÇ·ñ¿ÉÓÃ")]
+        [Description("æ˜¯å¦å¯ç”¨")]
         public override bool Enabled
         {
             get
@@ -70,11 +70,11 @@ namespace FineUI
         private string _dataField = String.Empty;
 
         /// <summary>
-        /// ×Ö¶ÎÃû³Æ
+        /// å­—æ®µåç§°
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue("")]
-        [Description("×Ö¶ÎÃû³Æ")]
+        [Description("å­—æ®µåç§°")]
         public string DataField
         {
             get
@@ -91,11 +91,11 @@ namespace FineUI
         private string _dataFormatString = String.Empty;
 
         /// <summary>
-        /// ×Ö¶Î¸ñÊ½»¯×Ö·û´®
+        /// å­—æ®µæ ¼å¼åŒ–å­—ç¬¦ä¸²
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue("")]
-        [Description("×Ö¶Î¸ñÊ½»¯×Ö·û´®")]
+        [Description("å­—æ®µæ ¼å¼åŒ–å­—ç¬¦ä¸²")]
         public string DataFormatString
         {
             get
@@ -112,11 +112,11 @@ namespace FineUI
         private string _nullDisplayText = String.Empty;
 
         /// <summary>
-        /// ´¦ÀíÊı¾İ¿âÖĞnullÖµ£¬Ä¬ÈÏÎª¿Õ×Ö·û´®
+        /// å¤„ç†æ•°æ®åº“ä¸­nullå€¼ï¼Œé»˜è®¤ä¸ºç©ºå­—ç¬¦ä¸²
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue("")]
-        [Description("´¦ÀíÊı¾İ¿âÖĞnullÖµ£¬Ä¬ÈÏÎª¿Õ×Ö·û´®")]
+        [Description("å¤„ç†æ•°æ®åº“ä¸­nullå€¼ï¼Œé»˜è®¤ä¸ºç©ºå­—ç¬¦ä¸²")]
         public string NullDisplayText
         {
             get
@@ -133,11 +133,11 @@ namespace FineUI
         private bool _htmlEncode = true;
 
         /// <summary>
-        /// ÏÔÊ¾Ö®Ç°½øĞĞHTML±àÂë£¨Ä¬ÈÏÎªtrue£©
+        /// æ˜¾ç¤ºä¹‹å‰è¿›è¡ŒHTMLç¼–ç ï¼ˆé»˜è®¤ä¸ºtrueï¼‰
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue(true)]
-        [Description("ÏÔÊ¾Ö®Ç°½øĞĞHTML±àÂë£¨Ä¬ÈÏÎªtrue£©")]
+        [Description("æ˜¾ç¤ºä¹‹å‰è¿›è¡ŒHTMLç¼–ç ï¼ˆé»˜è®¤ä¸ºtrueï¼‰")]
         public bool HtmlEncode
         {
             get
@@ -154,11 +154,11 @@ namespace FineUI
         private bool _htmlEncodeFormatString = true;
 
         /// <summary>
-        /// ÊÇ·ñÔÚÓ¦ÓÃDataFormatStringÊôĞÔÖ®ºó½øĞĞHTML±àÂë£¨Ä¬ÈÏÎªtrue£©
+        /// æ˜¯å¦åœ¨åº”ç”¨DataFormatStringå±æ€§ä¹‹åè¿›è¡ŒHTMLç¼–ç ï¼ˆé»˜è®¤ä¸ºtrueï¼‰
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue(true)]
-        [Description("ÊÇ·ñÔÚÓ¦ÓÃDataFormatStringÊôĞÔÖ®ºó½øĞĞHTML±àÂë£¨Ä¬ÈÏÎªtrue£©")]
+        [Description("æ˜¯å¦åœ¨åº”ç”¨DataFormatStringå±æ€§ä¹‹åè¿›è¡ŒHTMLç¼–ç ï¼ˆé»˜è®¤ä¸ºtrueï¼‰")]
         public bool HtmlEncodeFormatString
         {
             get
@@ -227,7 +227,7 @@ namespace FineUI
                 result = result.ToString().Insert("<span".Length, tooltip);
             }
 
-            // Èç¹û½á¹ûÊÇ <span>°ó¶¨µÄÊı¾İ</span>
+            // å¦‚æœç»“æœæ˜¯ <span>ç»‘å®šçš„æ•°æ®</span>
             if (result.StartsWith("<span>"))
             {
                 result = result.Substring("<span>".Length, result.Length - "<span></span>".Length);
@@ -246,7 +246,7 @@ namespace FineUI
         #region OnFirstPreRender
 
         /// <summary>
-        /// äÖÈ¾ HTML Ö®Ç°µ÷ÓÃ£¨Ò³ÃæµÚÒ»´Î¼ÓÔØ»òÕßÆÕÍ¨»Ø·¢£©
+        /// æ¸²æŸ“ HTML ä¹‹å‰è°ƒç”¨ï¼ˆé¡µé¢ç¬¬ä¸€æ¬¡åŠ è½½æˆ–è€…æ™®é€šå›å‘ï¼‰
         /// </summary>
         protected override void OnFirstPreRender()
         {

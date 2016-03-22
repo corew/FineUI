@@ -1,18 +1,18 @@
-
+ï»¿
 #region Comment
 
 /*
- * Project£º    FineUI
+ * Projectï¼š    FineUI
  * 
  * FileName:    XmlAttributeMapping.cs
  * CreatedOn:   2008-07-21
  * CreatedBy:   30372245@qq.com
  * 
  * 
- * Description£º
+ * Descriptionï¼š
  *      ->
  *   
- * History£º
+ * Historyï¼š
  *      ->
  * 
  * 
@@ -35,7 +35,7 @@ using System.Xml;
 namespace FineUI
 {
     /// <summary>
-    /// Ê÷½ÚµãµÄÊôĞÔÓ³Éä
+    /// æ ‘èŠ‚ç‚¹çš„å±æ€§æ˜ å°„
     /// </summary>
     [ToolboxItem(false)]
     public class XmlAttributeMapping
@@ -46,11 +46,11 @@ namespace FineUI
         private string _from = String.Empty;
 
         /// <summary>
-        /// Ó³ÉäÔ´
+        /// æ˜ å°„æº
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue("")]
-        [Description("Ó³ÉäÔ´")]
+        [Description("æ˜ å°„æº")]
         public string From
         {
             get
@@ -67,11 +67,11 @@ namespace FineUI
 
 
         /// <summary>
-        /// Ó³ÉäÄ¿±ê
+        /// æ˜ å°„ç›®æ ‡
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue("")]
-        [Description("Ó³ÉäÄ¿±ê")]
+        [Description("æ˜ å°„ç›®æ ‡")]
         public string To
         {
             get

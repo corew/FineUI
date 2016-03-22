@@ -1,17 +1,17 @@
-#region Comment
+ï»¿#region Comment
 
 /*
- * Project£º    FineUI
+ * Projectï¼š    FineUI
  * 
  * FileName:    GridTemplateContainer.cs
  * CreatedOn:   2008-05-27
  * CreatedBy:   30372245@qq.com
  * 
  * 
- * Description£º
+ * Descriptionï¼š
  *      ->
  *   
- * History£º
+ * Historyï¼š
  *      ->
  * 
  * 
@@ -35,16 +35,16 @@ using System.Globalization;
 namespace FineUI
 {
     /// <summary>
-    /// ÓÃÀ´×÷ÎªÄ£°åÁĞµÄÊı¾İ°ó¶¨ÈİÆ÷£¬ÊµÏÖÁËIDataItemContainer½Ó¿Ú
+    /// ç”¨æ¥ä½œä¸ºæ¨¡æ¿åˆ—çš„æ•°æ®ç»‘å®šå®¹å™¨ï¼Œå®ç°äº†IDataItemContaineræ¥å£
     /// </summary>
     [ToolboxItem(false)]
     public class GridTemplateContainer : WebControl, IDataItemContainer, INamingContainer
     {
         /// <summary>
-        /// ¹¹Ôìº¯Êı
+        /// æ„é€ å‡½æ•°
         /// </summary>
-        /// <param name="dataItem">Êı¾İÔ´</param>
-        /// <param name="rowIndex">ĞĞË÷Òı</param>
+        /// <param name="dataItem">æ•°æ®æº</param>
+        /// <param name="rowIndex">è¡Œç´¢å¼•</param>
         public GridTemplateContainer(object dataItem, int rowIndex)
         {
             _dataItem = dataItem;
@@ -53,19 +53,19 @@ namespace FineUI
         }
 
         /// <summary>
-        /// ¿Ø¼ş³õÊ¼»¯ÊÂ¼ş
+        /// æ§ä»¶åˆå§‹åŒ–äº‹ä»¶
         /// </summary>
-        /// <param name="e">ÊÂ¼ş²ÎÊı</param>
+        /// <param name="e">äº‹ä»¶å‚æ•°</param>
         protected override void OnInit(EventArgs e)
         {
             base.OnInit(e);
 
             if (!DesignMode)
             {
-                // È·±£ËùÓĞ×Ó¿Ø¼ş¶¼ÒÑ¾­±»´´½¨
+                // ç¡®ä¿æ‰€æœ‰å­æ§ä»¶éƒ½å·²ç»è¢«åˆ›å»º
                 EnsureChildControls();
 
-                // Èç¹û¿Ø¼şÃ»ÓĞÉèÖÃ ID£¬Ôò×Ô¶¯´´½¨Ò»¸ö£¨±ÈÈç£ºct100£©
+                // å¦‚æœæ§ä»¶æ²¡æœ‰è®¾ç½® IDï¼Œåˆ™è‡ªåŠ¨åˆ›å»ºä¸€ä¸ªï¼ˆæ¯”å¦‚ï¼šct100ï¼‰
                 base.EnsureID();
             }
 
@@ -74,9 +74,9 @@ namespace FineUI
         #region RenderBeginTag
 
         /// <summary>
-        /// äÖÈ¾¿ªÊ¼±êÇ©
+        /// æ¸²æŸ“å¼€å§‹æ ‡ç­¾
         /// </summary>
-        /// <param name="writer">ASP.NET·şÎñÆ÷¿Ø¼şÊä³öÁ÷</param>
+        /// <param name="writer">ASP.NETæœåŠ¡å™¨æ§ä»¶è¾“å‡ºæµ</param>
         public override void RenderBeginTag(HtmlTextWriter writer)
         {
             //base.RenderBeginTag(writer);
@@ -85,9 +85,9 @@ namespace FineUI
         }
 
         /// <summary>
-        /// äÖÈ¾½áÊø±êÇ©
+        /// æ¸²æŸ“ç»“æŸæ ‡ç­¾
         /// </summary>
-        /// <param name="writer">ASP.NET·şÎñÆ÷¿Ø¼şÊä³öÁ÷</param>
+        /// <param name="writer">ASP.NETæœåŠ¡å™¨æ§ä»¶è¾“å‡ºæµ</param>
         public override void RenderEndTag(HtmlTextWriter writer)
         {
             //base.RenderEndTag(writer);
@@ -102,7 +102,7 @@ namespace FineUI
         private object _dataItem;
 
         /// <summary>
-        /// Êı¾İÔ´£¨IDataItemContainer³ÉÔ±£©
+        /// æ•°æ®æºï¼ˆIDataItemContaineræˆå‘˜ï¼‰
         /// </summary>
         public object DataItem
         {
@@ -112,7 +112,7 @@ namespace FineUI
         private int _dataItemIndex;
 
         /// <summary>
-        /// Êı¾İÏîË÷Òı£¨IDataItemContainer³ÉÔ±£©
+        /// æ•°æ®é¡¹ç´¢å¼•ï¼ˆIDataItemContaineræˆå‘˜ï¼‰
         /// </summary>
         public int DataItemIndex
         {
@@ -122,7 +122,7 @@ namespace FineUI
         private int _displayIndex;
 
         /// <summary>
-        /// Êı¾İÏîÔÚ¿Ø¼şÖĞÏÔÊ¾Î»ÖÃµÄË÷Òı£¨IDataItemContainer³ÉÔ±£©
+        /// æ•°æ®é¡¹åœ¨æ§ä»¶ä¸­æ˜¾ç¤ºä½ç½®çš„ç´¢å¼•ï¼ˆIDataItemContaineræˆå‘˜ï¼‰
         /// </summary>
         public int DisplayIndex
         {

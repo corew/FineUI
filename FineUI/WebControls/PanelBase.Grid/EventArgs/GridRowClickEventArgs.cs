@@ -1,18 +1,18 @@
-
+ï»¿
 #region Comment
 
 /*
- * Project£º    FineUI
+ * Projectï¼š    FineUI
  * 
  * FileName:    GridRowClickEventArgs.cs
  * CreatedOn:   2008-06-25
  * CreatedBy:   30372245@qq.com
  * 
  * 
- * Description£º
+ * Descriptionï¼š
  *      ->
  *   
- * History£º
+ * Historyï¼š
  *      ->
  * 
  * 
@@ -32,7 +32,7 @@ using System.Web.UI;
 namespace FineUI
 {
     /// <summary>
-    /// ±í¸ñĞĞµã»÷ÊÂ¼ş²ÎÊı
+    /// è¡¨æ ¼è¡Œç‚¹å‡»äº‹ä»¶å‚æ•°
     /// </summary>
     public class GridRowClickEventArgs : EventArgs
     {
@@ -40,7 +40,7 @@ namespace FineUI
         private int _rowIndex;
 
         /// <summary>
-        /// ĞĞË÷Òı
+        /// è¡Œç´¢å¼•
         /// </summary>
         public int RowIndex
         {
@@ -50,7 +50,7 @@ namespace FineUI
         private string _rowID;
 
         /// <summary>
-        /// ĞĞID
+        /// è¡ŒID
         /// </summary>
         public string RowID
         {
@@ -59,10 +59,10 @@ namespace FineUI
 
 
         /// <summary>
-        /// ¹¹Ôìº¯Êı
+        /// æ„é€ å‡½æ•°
         /// </summary>
-        /// <param name="rowIndex">ĞĞË÷Òı</param>
-        /// <param name="rowID">ĞĞID</param>
+        /// <param name="rowIndex">è¡Œç´¢å¼•</param>
+        /// <param name="rowID">è¡ŒID</param>
         public GridRowClickEventArgs(int rowIndex, string rowID)
         {
             _rowIndex = rowIndex;

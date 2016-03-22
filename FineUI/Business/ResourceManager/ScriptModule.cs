@@ -1,4 +1,4 @@
-using System;
+ï»¿using System;
 using System.Collections.Generic;
 using System.Text;
 using System.IO;
@@ -9,7 +9,7 @@ using System.Web.UI;
 namespace FineUI
 {
     /// <summary>
-    /// ÇëÇó´¦ÀíÄ£¿é£¨Ö÷ÒªÓÃÀ´´¦ÀíResponse.RedirectµÄÇé¿ö£©
+    /// è¯·æ±‚å¤„ç†æ¨¡å—ï¼ˆä¸»è¦ç”¨æ¥å¤„ç†Response.Redirectçš„æƒ…å†µï¼‰
     /// </summary>
     public class ScriptModule : IHttpModule
     {
@@ -43,10 +43,10 @@ namespace FineUI
             }
         }
 
-        #region IHttpModule ³ÉÔ±
+        #region IHttpModule æˆå‘˜
 
         /// <summary>
-        /// Çå³ı×ÊÔ´
+        /// æ¸…é™¤èµ„æº
         /// </summary>
         public void Dispose()
         {
@@ -54,9 +54,9 @@ namespace FineUI
         }
 
         /// <summary>
-        /// ³õÊ¼»¯Ä£¿é
+        /// åˆå§‹åŒ–æ¨¡å—
         /// </summary>
-        /// <param name="context">HttpÓ¦ÓÃ³ÌĞò</param>
+        /// <param name="context">Httpåº”ç”¨ç¨‹åº</param>
         public void Init(HttpApplication context)
         {
             context.PreSendRequestHeaders += new EventHandler(PreSendRequestHeadersHandler);

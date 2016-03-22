@@ -1,18 +1,18 @@
-
+ï»¿
 #region Comment
 
 /*
- * Project£º    FineUI
+ * Projectï¼š    FineUI
  * 
  * FileName:    GridColumn.cs
  * CreatedOn:   2008-05-19
  * CreatedBy:   30372245@qq.com
  * 
  * 
- * Description£º
+ * Descriptionï¼š
  *      ->
  *   
- * History£º
+ * Historyï¼š
  *      ->
  * 
  * 
@@ -34,14 +34,14 @@ using System.Web.UI;
 namespace FineUI
 {
     /// <summary>
-    /// ±í¸ñÁĞ¼¯ºÏ
+    /// è¡¨æ ¼åˆ—é›†åˆ
     /// </summary>
     public class GridColumnCollection : BaseCollection<GridColumn>
     {
         /// <summary>
-        /// ¹¹Ôìº¯Êı
+        /// æ„é€ å‡½æ•°
         /// </summary>
-        /// <param name="parent">¸¸¿Ø¼şÊµÀı</param>
+        /// <param name="parent">çˆ¶æ§ä»¶å®ä¾‹</param>
         public GridColumnCollection(ControlBase parent)
             : base(parent)
         {
@@ -52,9 +52,9 @@ namespace FineUI
         private Grid _grid;
         
         /// <summary>
-        /// ¹¹Ôìº¯Êı
+        /// æ„é€ å‡½æ•°
         /// </summary>
-        /// <param name="grid">±í¸ñÊµÀı</param>
+        /// <param name="grid">è¡¨æ ¼å®ä¾‹</param>
         public GridColumnCollection(Grid grid)
         {
             _grid = grid;
@@ -62,10 +62,10 @@ namespace FineUI
         }
 
         /// <summary>
-        /// ²åÈëÁĞ
+        /// æ’å…¥åˆ—
         /// </summary>
-        /// <param name="index">Ë÷Òı</param>
-        /// <param name="item">ÁĞ</param>
+        /// <param name="index">ç´¢å¼•</param>
+        /// <param name="item">åˆ—</param>
         protected override void InsertItem(int index, GridColumn item)
         {
             item.ColumnIndex = index;

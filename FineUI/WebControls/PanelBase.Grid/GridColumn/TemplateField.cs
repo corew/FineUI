@@ -1,18 +1,18 @@
-
+ï»¿
 #region Comment
 
 /*
- * Project£º    FineUI
+ * Projectï¼š    FineUI
  * 
  * FileName:    TemplateField.cs
  * CreatedOn:   2008-05-27
  * CreatedBy:   30372245@qq.com
  * 
  * 
- * Description£º
+ * Descriptionï¼š
  *      ->
  *   
- * History£º
+ * Historyï¼š
  *      ->
  * 
  * 
@@ -39,7 +39,7 @@ using System.IO;
 namespace FineUI
 {
     /// <summary>
-    /// ±í¸ñÄ£°åÁĞ
+    /// è¡¨æ ¼æ¨¡æ¿åˆ—
     /// </summary>
     [ToolboxItem(false)]
     [ParseChildren(true)]
@@ -51,13 +51,13 @@ namespace FineUI
         private ITemplate _itemTemplate;
 
         /// <summary>
-        /// Ä£°åÈİÆ÷
+        /// æ¨¡æ¿å®¹å™¨
         /// </summary>
         [Browsable(false)]
         [PersistenceMode(PersistenceMode.InnerProperty)]
         [TemplateInstance(TemplateInstance.Single)]
         [TemplateContainer(typeof(GridTemplateContainer))]
-        [Description("Ä£°åÈİÆ÷")]
+        [Description("æ¨¡æ¿å®¹å™¨")]
         public virtual ITemplate ItemTemplate
         {
             get
@@ -74,11 +74,11 @@ namespace FineUI
         private bool _renderAsRowExpander = false;
 
         /// <summary>
-        /// ÊÇ·ñäÖÈ¾ÎªĞĞÀ©Õ¹ÁĞ
+        /// æ˜¯å¦æ¸²æŸ“ä¸ºè¡Œæ‰©å±•åˆ—
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue(false)]
-        [Description("ÊÇ·ñäÖÈ¾ÎªĞĞÀ©Õ¹ÁĞ")]
+        [Description("æ˜¯å¦æ¸²æŸ“ä¸ºè¡Œæ‰©å±•åˆ—")]
         public bool RenderAsRowExpander
         {
             get
@@ -94,11 +94,11 @@ namespace FineUI
 
         private bool _expandOnDoubleClick = true;
         /// <summary>
-        /// Ë«»÷Õ¹¿ªÕÛµşĞĞÀ©Õ¹ÁĞ
+        /// åŒå‡»å±•å¼€æŠ˜å è¡Œæ‰©å±•åˆ—
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue(true)]
-        [Description("Ë«»÷Õ¹¿ªÕÛµşĞĞÀ©Õ¹ÁĞ")]
+        [Description("åŒå‡»å±•å¼€æŠ˜å è¡Œæ‰©å±•åˆ—")]
         public bool ExpandOnDoubleClick
         {
             get
@@ -113,11 +113,11 @@ namespace FineUI
 
         private bool _expandOnEnter = true;
         /// <summary>
-        /// »Ø³µ°´¼üÕ¹¿ªÕÛµşĞĞÀ©Õ¹ÁĞ
+        /// å›è½¦æŒ‰é”®å±•å¼€æŠ˜å è¡Œæ‰©å±•åˆ—
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue(true)]
-        [Description("»Ø³µ°´¼üÕ¹¿ªÕÛµşĞĞÀ©Õ¹ÁĞ")]
+        [Description("å›è½¦æŒ‰é”®å±•å¼€æŠ˜å è¡Œæ‰©å±•åˆ—")]
         public bool ExpandOnEnter
         {
             get
@@ -132,11 +132,11 @@ namespace FineUI
 
         private bool _expandToSelectRow = false;
         /// <summary>
-        /// µã»÷Í¼±êÕ¹¿ªÕÛµşĞĞÀ©Õ¹ÁĞÊ±Ñ¡ÖĞĞĞ
+        /// ç‚¹å‡»å›¾æ ‡å±•å¼€æŠ˜å è¡Œæ‰©å±•åˆ—æ—¶é€‰ä¸­è¡Œ
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue(false)]
-        [Description("µã»÷Í¼±êÕ¹¿ªÕÛµşĞĞÀ©Õ¹ÁĞÊ±Ñ¡ÖĞĞĞ")]
+        [Description("ç‚¹å‡»å›¾æ ‡å±•å¼€æŠ˜å è¡Œæ‰©å±•åˆ—æ—¶é€‰ä¸­è¡Œ")]
         public bool ExpandToSelectRow
         {
             get
@@ -171,7 +171,7 @@ namespace FineUI
         #region OnFirstPreRender
 
         /// <summary>
-        /// äÖÈ¾ HTML Ö®Ç°µ÷ÓÃ£¨Ò³ÃæµÚÒ»´Î¼ÓÔØ»òÕßÆÕÍ¨»Ø·¢£©
+        /// æ¸²æŸ“ HTML ä¹‹å‰è°ƒç”¨ï¼ˆé¡µé¢ç¬¬ä¸€æ¬¡åŠ è½½æˆ–è€…æ™®é€šå›å‘ï¼‰
         /// </summary>
         protected override void OnFirstPreRender()
         {

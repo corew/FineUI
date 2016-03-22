@@ -1,18 +1,18 @@
-
+ï»¿
 #region Comment
 
 /*
- * Project£º    FineUI
+ * Projectï¼š    FineUI
  * 
  * FileName:    TreeNodeCollection.cs
  * CreatedOn:   2008-07-21
  * CreatedBy:   30372245@qq.com
  * 
  * 
- * Description£º
+ * Descriptionï¼š
  *      ->
  *   
- * History£º
+ * Historyï¼š
  *      ->
  * 
  * 
@@ -32,7 +32,7 @@ using System.Web.UI;
 namespace FineUI
 {
     /// <summary>
-    /// Ê÷½Úµã¿Ø¼ş¼¯ºÏ
+    /// æ ‘èŠ‚ç‚¹æ§ä»¶é›†åˆ
     /// </summary>
     public class TreeNodeCollection : Collection<TreeNode>
     {
@@ -40,10 +40,10 @@ namespace FineUI
         private TreeNode _parentNode;
 
         /// <summary>
-        /// ¹¹Ôìº¯Êı
+        /// æ„é€ å‡½æ•°
         /// </summary>
-        /// <param name="tree">Ê÷ÊµÀı</param>
-        /// <param name="parentNode">¸¸½Úµã</param>
+        /// <param name="tree">æ ‘å®ä¾‹</param>
+        /// <param name="parentNode">çˆ¶èŠ‚ç‚¹</param>
         public TreeNodeCollection(Tree tree, TreeNode parentNode)
         {
             _treeInstance = tree;
@@ -51,29 +51,29 @@ namespace FineUI
         }
 
 
-        // ×¢ÊÍ1:
-        // ¿¼ÂÇÕâÑùµÄÇé¿ö£º
+        // æ³¨é‡Š1:
+        // è€ƒè™‘è¿™æ ·çš„æƒ…å†µï¼š
         // TreeNodeCollection nodes = new TreeNodeCollection();
         // TreeNode node = new TreeNode();
-        // ×¢Òâ´ËÊ±node²¢Ã»ÓĞ¹ØÓÚtree1µÄÈÎºÎĞÅÏ¢£¬Ö®ºóÔÚºóÃæµ÷ÓÃtree1.Nodes.AddÊ±²ÅÖªµÀµ±Ç°µÄÊ÷ÊµÀı
+        // æ³¨æ„æ­¤æ—¶nodeå¹¶æ²¡æœ‰å…³äºtree1çš„ä»»ä½•ä¿¡æ¯ï¼Œä¹‹ååœ¨åé¢è°ƒç”¨tree1.Nodes.Addæ—¶æ‰çŸ¥é“å½“å‰çš„æ ‘å®ä¾‹
         // nodes.Add(node);
         // tree1.Nodes.Add(nodes);
 
-        // ×¢ÊÍ2:
-        // ¶ÔÓÚÏÂÃæµÄÊ÷µÄ½Úµã¶¨Òå£¨ÔÚASPXÖĞ¶¨ÒåµÄ£©
+        // æ³¨é‡Š2:
+        // å¯¹äºä¸‹é¢çš„æ ‘çš„èŠ‚ç‚¹å®šä¹‰ï¼ˆåœ¨ASPXä¸­å®šä¹‰çš„ï¼‰
         //    -China
 	    //          -Zhumadian
 		//              -Suiping
 		//              -Xiping
-        // ×¢Òâ InsertItem µÚÒ»´Îµ÷ÓÃÊÇÔÚÌí¼ÓSuipingÕâ¸ö½ÚµãÊ±½øĞĞµÄ£¬
-        // Ò²¾ÍÊÇËµÔÚÌí¼ÓSuipingÊ±£¬²¢²»ÖªµÀµ±Ç°µÄÊ÷ÊµÀı£¬¶øÖ»ÓĞÔÚÌí¼ÓChinaµ½tree1.NodesÊ±²ÅÖªµÀÊ÷ÊµÀı
-        // ËùÒÔĞèÒªÔÚ _treeInstance ²»Îª¿ÕÊ±£¬Ò²¼´ÊÇÌí¼Ó¸ù½ÚµãÊ±µİ¹éËùÓĞµÄ×Ó½Úµã£¬ÉèÖÃÊ÷ÊµÀı
+        // æ³¨æ„ InsertItem ç¬¬ä¸€æ¬¡è°ƒç”¨æ˜¯åœ¨æ·»åŠ Suipingè¿™ä¸ªèŠ‚ç‚¹æ—¶è¿›è¡Œçš„ï¼Œ
+        // ä¹Ÿå°±æ˜¯è¯´åœ¨æ·»åŠ Suipingæ—¶ï¼Œå¹¶ä¸çŸ¥é“å½“å‰çš„æ ‘å®ä¾‹ï¼Œè€Œåªæœ‰åœ¨æ·»åŠ Chinaåˆ°tree1.Nodesæ—¶æ‰çŸ¥é“æ ‘å®ä¾‹
+        // æ‰€ä»¥éœ€è¦åœ¨ _treeInstance ä¸ä¸ºç©ºæ—¶ï¼Œä¹Ÿå³æ˜¯æ·»åŠ æ ¹èŠ‚ç‚¹æ—¶é€’å½’æ‰€æœ‰çš„å­èŠ‚ç‚¹ï¼Œè®¾ç½®æ ‘å®ä¾‹
         
         /// <summary>
-        /// ²åÈëÊ÷½Úµã
+        /// æ’å…¥æ ‘èŠ‚ç‚¹
         /// </summary>
-        /// <param name="index">²åÈëË÷ÒıÎ»ÖÃ</param>
-        /// <param name="item">Ê÷½ÚµãÊµÀı</param>
+        /// <param name="index">æ’å…¥ç´¢å¼•ä½ç½®</param>
+        /// <param name="item">æ ‘èŠ‚ç‚¹å®ä¾‹</param>
         protected override void InsertItem(int index, TreeNode item)
         {
             if (_treeInstance != null)
@@ -88,7 +88,7 @@ namespace FineUI
 
 
         /// <summary>
-        /// ÉèÖÃÃ¿¸ö½ÚµãµÄTreeÊµÀı
+        /// è®¾ç½®æ¯ä¸ªèŠ‚ç‚¹çš„Treeå®ä¾‹
         /// </summary>
         /// <param name="node"></param>
         private void ResolveTreeNode(TreeNode node)

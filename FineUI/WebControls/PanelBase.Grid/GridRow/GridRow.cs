@@ -1,17 +1,17 @@
-#region Comment
+ï»¿#region Comment
 
 /*
- * Project£º    FineUI
+ * Projectï¼š    FineUI
  * 
  * FileName:    GridRow.cs
  * CreatedOn:   2008-05-19
  * CreatedBy:   30372245@qq.com
  * 
  * 
- * Description£º
+ * Descriptionï¼š
  *      ->
  *   
- * History£º
+ * Historyï¼š
  *      ->
  * 
  * 
@@ -36,7 +36,7 @@ using System.Collections.ObjectModel;
 namespace FineUI
 {
     /// <summary>
-    /// ±í¸ñĞĞ
+    /// è¡¨æ ¼è¡Œ
     /// </summary>
     [ToolboxItem(false)]
     public class GridRow // : WebControl
@@ -44,7 +44,7 @@ namespace FineUI
         #region Constructor
 
         /// <summary>
-        /// ¹¹Ôìº¯Êı
+        /// æ„é€ å‡½æ•°
         /// </summary>
         public GridRow()
         {
@@ -52,11 +52,11 @@ namespace FineUI
         }
 
         /// <summary>
-        /// ¹¹Ôìº¯Êı
+        /// æ„é€ å‡½æ•°
         /// </summary>
-        /// <param name="grid">±í¸ñÊµÀı</param>
-        /// <param name="dataItem">ĞĞ¶ÔÓ¦µÄÊı¾İÔ´£¨ÔÚ»Ø·¢Ê±Îªnull£©</param>
-        /// <param name="rowIndex">ĞĞĞòºÅ</param>
+        /// <param name="grid">è¡¨æ ¼å®ä¾‹</param>
+        /// <param name="dataItem">è¡Œå¯¹åº”çš„æ•°æ®æºï¼ˆåœ¨å›å‘æ—¶ä¸ºnullï¼‰</param>
+        /// <param name="rowIndex">è¡Œåºå·</param>
         public GridRow(Grid grid, object dataItem, int rowIndex)
         {
             _grid = grid;
@@ -71,7 +71,7 @@ namespace FineUI
         private Grid _grid;
 
         /// <summary>
-        /// ±í¸ñÊµÀı
+        /// è¡¨æ ¼å®ä¾‹
         /// </summary>
         public Grid Grid
         {
@@ -84,7 +84,7 @@ namespace FineUI
         private object _dataItem = null;
 
         /// <summary>
-        /// ±¾ĞĞ¶ÔÓ¦µÄÊı¾İÔ´£¨²»Î¬»¤×´Ì¬£©
+        /// æœ¬è¡Œå¯¹åº”çš„æ•°æ®æºï¼ˆä¸ç»´æŠ¤çŠ¶æ€ï¼‰
         /// </summary>
         public object DataItem
         {
@@ -96,7 +96,7 @@ namespace FineUI
         private int _rowIndex = 0;
 
         /// <summary>
-        /// µÚ¼¸ĞĞ
+        /// ç¬¬å‡ è¡Œ
         /// </summary>
         public int RowIndex
         {
@@ -118,7 +118,7 @@ namespace FineUI
         private object[] _values = null;
 
         /// <summary>
-        /// ´ËĞĞµÄ×´Ì¬ĞÅÏ¢
+        /// æ­¤è¡Œçš„çŠ¶æ€ä¿¡æ¯
         /// </summary>
         public object[] Values
         {
@@ -135,7 +135,7 @@ namespace FineUI
         private object[] _dataKeys = null;
 
         /// <summary>
-        /// ´ËĞĞDataKeyNames×Ö¶ÎµÄÖµ
+        /// æ­¤è¡ŒDataKeyNameså­—æ®µçš„å€¼
         /// </summary>
         public object[] DataKeys
         {
@@ -152,7 +152,7 @@ namespace FineUI
         private string _rowID = String.Empty;
 
         /// <summary>
-        /// ´ËĞĞDataIDField×Ö¶ÎµÄÖµ
+        /// æ­¤è¡ŒDataIDFieldå­—æ®µçš„å€¼
         /// </summary>
         public string RowID
         {
@@ -169,7 +169,7 @@ namespace FineUI
         private object[] _states = null;
 
         /// <summary>
-        /// ·Ç¹«¿ªÊôĞÔ£¬¶ÔÓÚCheckBoxField¿ÉÒÔÍ¨¹ıGetCheckedState·ÃÎÊ
+        /// éå…¬å¼€å±æ€§ï¼Œå¯¹äºCheckBoxFieldå¯ä»¥é€šè¿‡GetCheckedStateè®¿é—®
         /// </summary>
         internal object[] States
         {
@@ -185,7 +185,7 @@ namespace FineUI
 
         //private object[] _extraValues = null;
         ///// <summary>
-        ///// ¸½¼ÓÒª±£´æµÄÖµ£¨±ÈÈçCheckBoxFieldĞèÒª±£´æÊÇ·ñÑ¡ÖĞµÄ×´Ì¬£©
+        ///// é™„åŠ è¦ä¿å­˜çš„å€¼ï¼ˆæ¯”å¦‚CheckBoxFieldéœ€è¦ä¿å­˜æ˜¯å¦é€‰ä¸­çš„çŠ¶æ€ï¼‰
         ///// </summary>
         //internal object[] ExtraValues
         //{
@@ -204,7 +204,7 @@ namespace FineUI
         #region ToShortStates/FromShortStates
 
         /// <summary>
-        /// ÊÇ·ñ¶¨ÒåÁËĞĞÁĞ×´Ì¬ÁĞ±í
+        /// æ˜¯å¦å®šä¹‰äº†è¡Œåˆ—çŠ¶æ€åˆ—è¡¨
         /// </summary>
         /// <returns></returns>
         internal bool HasStates()
@@ -225,7 +225,7 @@ namespace FineUI
 
 
         /// <summary>
-        /// »Ö¸´µ±Ç°ĞĞÁĞ×´Ì¬ÁĞ±í
+        /// æ¢å¤å½“å‰è¡Œåˆ—çŠ¶æ€åˆ—è¡¨
         /// </summary>
         /// <param name="states"></param>
         internal void RecoverStates(object[] states)
@@ -239,7 +239,7 @@ namespace FineUI
             {
                 _states = states;
 
-                // ÒÑ¾­¸üĞÂÁËµ±Ç°ĞĞµÄStates£¬ÏÂÃæ´ÓStates»Ö¸´ÏàÓ¦µ¥Ôª¸ñµÄValue£¬±ÈÈçCheckBoxFieldµÄGetColumnValue¾ÍÊÇ´ÓStates¶ÁÈ¡µÄÖµ
+                // å·²ç»æ›´æ–°äº†å½“å‰è¡Œçš„Statesï¼Œä¸‹é¢ä»Statesæ¢å¤ç›¸åº”å•å…ƒæ ¼çš„Valueï¼Œæ¯”å¦‚CheckBoxFieldçš„GetColumnValueå°±æ˜¯ä»Statesè¯»å–çš„å€¼
                 int columnIndex = 0;
                 foreach (object state in _states)
                 {
@@ -254,7 +254,7 @@ namespace FineUI
         }
 
         ///// <summary>
-        ///// µ±Ç°ĞĞÁĞ×´Ì¬ÁĞ±í
+        ///// å½“å‰è¡Œåˆ—çŠ¶æ€åˆ—è¡¨
         ///// </summary>
         ///// <returns></returns>
         //internal object[] ToShortStates()
@@ -272,7 +272,7 @@ namespace FineUI
         //}
 
         /// <summary>
-        /// »Ö¸´µ±Ç°ĞĞÁĞ×´Ì¬ÁĞ±í£¨Í¬Ê±¸üĞÂÏàÓ¦µÄValuesÖµ£©
+        /// æ¢å¤å½“å‰è¡Œåˆ—çŠ¶æ€åˆ—è¡¨ï¼ˆåŒæ—¶æ›´æ–°ç›¸åº”çš„Valueså€¼ï¼‰
         /// </summary>
         /// <param name="shortStates"></param>
         internal void FromShortStates(object[] shortStates)
@@ -308,7 +308,7 @@ namespace FineUI
 
 
         /// <summary>
-        /// ¸üĞÂµ±Ç°ĞĞÄ³ÁĞµÄäÖÈ¾ºóµÄHTML
+        /// æ›´æ–°å½“å‰è¡ŒæŸåˆ—çš„æ¸²æŸ“åçš„HTML
         /// </summary>
         /// <param name="columnIndex"></param>
         internal void UpdateValuesAt(int columnIndex)
@@ -324,7 +324,7 @@ namespace FineUI
         private GridTemplateContainer[] _templateContainers = null;
         
         /// <summary>
-        /// ±í¸ñĞĞÖĞÄ£°åÁĞ¿Ø¼şÁĞ±í£¬Ò»¸öµäĞÍµÄÀı×ÓÎª£º[GridRowControl, null, null, GridRowControl, null, null, null, null, null]
+        /// è¡¨æ ¼è¡Œä¸­æ¨¡æ¿åˆ—æ§ä»¶åˆ—è¡¨ï¼Œä¸€ä¸ªå…¸å‹çš„ä¾‹å­ä¸ºï¼š[GridRowControl, null, null, GridRowControl, null, null, null, null, null]
         /// </summary>
         public GridTemplateContainer[] TemplateContainers
         {
@@ -339,7 +339,7 @@ namespace FineUI
         }
 
         /// <summary>
-        /// ±í¸ñĞĞÖĞÄ£°åÁĞ¿Ø¼şÁĞ±í£¨Êı¾İ°ó¶¨Ê±×Ô¶¯Éú³ÉÃ¿¸öÄ£°åÁĞ¿Ø¼şID£¬»Ø·¢Ê±´ÓFStateÖĞ»Ø·¢Ä£°åÁĞ¿Ø¼şID£©
+        /// è¡¨æ ¼è¡Œä¸­æ¨¡æ¿åˆ—æ§ä»¶åˆ—è¡¨ï¼ˆæ•°æ®ç»‘å®šæ—¶è‡ªåŠ¨ç”Ÿæˆæ¯ä¸ªæ¨¡æ¿åˆ—æ§ä»¶IDï¼Œå›å‘æ—¶ä»FStateä¸­å›å‘æ¨¡æ¿åˆ—æ§ä»¶IDï¼‰
         /// </summary>
         public void InitTemplateContainers()
         {
@@ -355,12 +355,12 @@ namespace FineUI
                     GridTemplateContainer control = new GridTemplateContainer(DataItem, RowIndex);
                     
 
-                    // ²»ÓÃÖ¸¶¨ID£¬»á×Ô¶¯Éú³ÉÀàËÆ ct123 µÄÎ¨Ò»ID
+                    // ä¸ç”¨æŒ‡å®šIDï¼Œä¼šè‡ªåŠ¨ç”Ÿæˆç±»ä¼¼ ct123 çš„å”¯ä¸€ID
                     //control.ID = String.Format("c{0}r{1}", column.ColumnIndex, RowIndex);
 
                     if (DataItem == null)
                     {
-                        // »Ø·¢Ê±»Ö¸´FState½×¶Î£¨·ÇÊı¾İ°ó¶¨½×¶Î£©£¬´ÓValuesÖĞ¶ÁÈ¡Ä£°åÁĞµÄ·şÎñÆ÷ID£¨ÔÚµÚÒ»´Î¼ÓÔØÊ±×Ô¶¯Éú³ÉµÄ£©
+                        // å›å‘æ—¶æ¢å¤FStateé˜¶æ®µï¼ˆéæ•°æ®ç»‘å®šé˜¶æ®µï¼‰ï¼Œä»Valuesä¸­è¯»å–æ¨¡æ¿åˆ—çš„æœåŠ¡å™¨IDï¼ˆåœ¨ç¬¬ä¸€æ¬¡åŠ è½½æ—¶è‡ªåŠ¨ç”Ÿæˆçš„ï¼‰
                         string fieldValue = Values[i].ToString();
                         if (fieldValue.StartsWith(Grid.TEMPLATE_PLACEHOLDER_PREFIX))
                         {
@@ -386,7 +386,7 @@ namespace FineUI
         #region DataBindRow
 
         ///// <summary>
-        ///// °ó¶¨×Ó¿Ø¼ş
+        ///// ç»‘å®šå­æ§ä»¶
         ///// </summary>
         //protected override void DataBindChildren()
         //{
@@ -396,7 +396,7 @@ namespace FineUI
         //}
 
         /// <summary>
-        /// °ó¶¨ĞĞµÄÖµ
+        /// ç»‘å®šè¡Œçš„å€¼
         /// </summary>
         internal void DataBindRow()
         {
@@ -407,11 +407,11 @@ namespace FineUI
             }
             else
             {
-                // Èç¹û±í¸ñÎ´¶¨Òå DataIDField£¬Ôò×Ô¶¯Éú³ÉÒ»¸ö RowId
+                // å¦‚æœè¡¨æ ¼æœªå®šä¹‰ DataIDFieldï¼Œåˆ™è‡ªåŠ¨ç”Ÿæˆä¸€ä¸ª RowId
                 //RowID = GridRowIDManager.Instance.GetNextGridRowID();
 
-                // Èç¹û±í¸ñÎ´¶¨Òå DataIDField£¬Ôò×Ô¶¯Éú³ÉÒ»¸ö RowId
-                // Ê¹ÓÃ rowIndex À´×é×° RowId£¬ÔÚÒ³Ãæ»Ø·¢¹ı³ÌÖĞÏà¶Ô±È½ÏÎÈ¶¨
+                // å¦‚æœè¡¨æ ¼æœªå®šä¹‰ DataIDFieldï¼Œåˆ™è‡ªåŠ¨ç”Ÿæˆä¸€ä¸ª RowId
+                // ä½¿ç”¨ rowIndex æ¥ç»„è£… RowIdï¼Œåœ¨é¡µé¢å›å‘è¿‡ç¨‹ä¸­ç›¸å¯¹æ¯”è¾ƒç¨³å®š
                 RowID = String.Format("frow{0}", RowIndex);
             }
 
@@ -429,7 +429,7 @@ namespace FineUI
 
             Collection<GridColumn> columns = _grid.AllColumns;
 
-            // ¼ÆËãÃ¿ÁĞµÄÖµ
+            // è®¡ç®—æ¯åˆ—çš„å€¼
             Values = new object[columns.Count];
             States = new object[columns.Count];
 
@@ -444,7 +444,7 @@ namespace FineUI
                 }
             }
 
-            // ¼ÆËãDataKeysµÄÖµ
+            // è®¡ç®—DataKeysçš„å€¼
             if (_grid.DataKeyNames != null)
             {
                 string[] keyNames = _grid.DataKeyNames;
@@ -455,8 +455,8 @@ namespace FineUI
 
                     if (_grid.AllowCellEditing)
                     {
-                        // Èç¹ûÔÊĞíµ¥Ôª¸ñ±à¼­£¬ÔòDataKeysµÄÖµÀàĞÍ³¢ÊÔÊ¹ÓÃÁĞ¶¨ÒåµÄFieldType
-                        // È·±£ÓÃ»§ÔÚ¿Í»§¶ËĞŞ¸ÄÁËDataKeyNamesÖĞ¶¨ÒåµÄÖµºó£¬Í¬Ê±ÔÚGridµÄLoadPostDataÖĞ¸üĞÂÕâ¸öÖµ
+                        // å¦‚æœå…è®¸å•å…ƒæ ¼ç¼–è¾‘ï¼Œåˆ™DataKeysçš„å€¼ç±»å‹å°è¯•ä½¿ç”¨åˆ—å®šä¹‰çš„FieldType
+                        // ç¡®ä¿ç”¨æˆ·åœ¨å®¢æˆ·ç«¯ä¿®æ”¹äº†DataKeyNamesä¸­å®šä¹‰çš„å€¼åï¼ŒåŒæ—¶åœ¨Gridçš„LoadPostDataä¸­æ›´æ–°è¿™ä¸ªå€¼
                         if (_grid.cellEditingDataKeyNameField.ContainsKey(keyName))
                         {
                             DataKeys[j] = _grid.cellEditingDataKeyNameField[keyName].GetColumnValue(this);
@@ -479,7 +479,7 @@ namespace FineUI
 
         private string RemoveNewLine(string columnValue)
         {
-            // É¾³ıÉú³ÉHTMLÖĞµÄ "\r\n     "
+            // åˆ é™¤ç”ŸæˆHTMLä¸­çš„ "\r\n     "
             return Regex.Replace(columnValue, "\r?\n\\s*", "");
         }
 
@@ -488,7 +488,7 @@ namespace FineUI
         #region FindControl
 
         /// <summary>
-        /// ²éÕÒ±í¸ñĞĞÄÚµÄ¿Ø¼ş
+        /// æŸ¥æ‰¾è¡¨æ ¼è¡Œå†…çš„æ§ä»¶
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>

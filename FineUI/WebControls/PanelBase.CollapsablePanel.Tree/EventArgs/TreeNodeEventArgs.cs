@@ -1,18 +1,18 @@
-
+ï»¿
 #region Comment
 
 /*
- * Project£º    FineUI
+ * Projectï¼š    FineUI
  * 
  * FileName:    TreeNodeEventArgs.cs
  * CreatedOn:   2014-03-28
  * CreatedBy:   30372245@qq.com
  * 
  * 
- * Description£º
+ * Descriptionï¼š
  *      ->
  *   
- * History£º
+ * Historyï¼š
  *      ->
  * 
  * 
@@ -33,14 +33,14 @@ using System.Xml;
 namespace FineUI
 {
     /// <summary>
-    /// Ê÷½ÚµãÕ¹¿ªÊÂ¼ş²ÎÊı
+    /// æ ‘èŠ‚ç‚¹å±•å¼€äº‹ä»¶å‚æ•°
     /// </summary>
     public class TreeNodeEventArgs : EventArgs
     {
         private TreeNode _node;
 
         /// <summary>
-        /// Ê÷ÊµÀı
+        /// æ ‘å®ä¾‹
         /// </summary>
         public TreeNode Node
         {
@@ -52,7 +52,7 @@ namespace FineUI
         private string _nodeID;
 
         /// <summary>
-        /// Ê÷½ÚµãID
+        /// æ ‘èŠ‚ç‚¹ID
         /// </summary>
         public string NodeID
         {
@@ -63,7 +63,7 @@ namespace FineUI
         private XmlNode _xmlNode;
 
         /// <summary>
-        /// Ê÷½ÚµãµÄÊı¾İÔ´
+        /// æ ‘èŠ‚ç‚¹çš„æ•°æ®æº
         /// </summary>
         public XmlNode XmlNode
         {
@@ -72,9 +72,9 @@ namespace FineUI
         }
 
         /// <summary>
-        /// ¹¹Ôìº¯Êı
+        /// æ„é€ å‡½æ•°
         /// </summary>
-        /// <param name="node">Ê÷½Úµã</param>
+        /// <param name="node">æ ‘èŠ‚ç‚¹</param>
         public TreeNodeEventArgs(TreeNode node)
         {
             _node = node;
@@ -83,10 +83,10 @@ namespace FineUI
 
 
         /// <summary>
-        /// ¹¹Ôìº¯Êı
+        /// æ„é€ å‡½æ•°
         /// </summary>
-        /// <param name="node">Ê÷½Úµã</param>
-        /// <param name="xmlNode">Ê÷½ÚµãµÄÊı¾İÔ´</param>
+        /// <param name="node">æ ‘èŠ‚ç‚¹</param>
+        /// <param name="xmlNode">æ ‘èŠ‚ç‚¹çš„æ•°æ®æº</param>
         public TreeNodeEventArgs(TreeNode node, XmlNode xmlNode)
         {
             _node = node;

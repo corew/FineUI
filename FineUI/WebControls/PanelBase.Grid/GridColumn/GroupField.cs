@@ -1,18 +1,18 @@
-
+ï»¿
 #region Comment
 
 /*
- * Project£º    FineUI
+ * Projectï¼š    FineUI
  * 
  * FileName:    GroupField.cs
  * CreatedOn:   2013-10-08
  * CreatedBy:   30372245@qq.com
  * 
  * 
- * Description£º
+ * Descriptionï¼š
  *      ->
  *   
- * History£º
+ * Historyï¼š
  *      ->
  * 
  * 
@@ -39,7 +39,7 @@ using System.Web.UI.WebControls;
 namespace FineUI
 {
     /// <summary>
-    /// ±í¸ñ·Ö×éÁĞ
+    /// è¡¨æ ¼åˆ†ç»„åˆ—
     /// </summary>
     [ToolboxItem(false)]
     [ParseChildren(true)]
@@ -52,7 +52,7 @@ namespace FineUI
         private GridColumnCollection _columns;
 
         /// <summary>
-        /// ÁĞÊı¾İ
+        /// åˆ—æ•°æ®
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [NotifyParentProperty(true)]
@@ -76,7 +76,7 @@ namespace FineUI
         #region OnFirstPreRender
 
         /// <summary>
-        /// äÖÈ¾ HTML Ö®Ç°µ÷ÓÃ£¨Ò³ÃæµÚÒ»´Î¼ÓÔØ»òÕßÆÕÍ¨»Ø·¢£©
+        /// æ¸²æŸ“ HTML ä¹‹å‰è°ƒç”¨ï¼ˆé¡µé¢ç¬¬ä¸€æ¬¡åŠ è½½æˆ–è€…æ™®é€šå›å‘ï¼‰
         /// </summary>
         protected override void OnFirstPreRender()
         {

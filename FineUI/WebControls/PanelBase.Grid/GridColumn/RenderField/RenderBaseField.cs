@@ -1,18 +1,18 @@
-
+ï»¿
 #region Comment
 
 /*
- * Project£º    FineUI
+ * Projectï¼š    FineUI
  * 
  * FileName:    RenderBaseField.cs
  * CreatedOn:   2013-05-18
  * CreatedBy:   30372245@qq.com
  * 
  * 
- * Description£º
+ * Descriptionï¼š
  *      ->
  *   
- * History£º
+ * Historyï¼š
  *      ->
  * 
  * 
@@ -39,7 +39,7 @@ using System.Web.UI.WebControls;
 namespace FineUI
 {
     /// <summary>
-    /// ±í¸ñ¿É±à¼­ÁĞµÄ»ùÀà
+    /// è¡¨æ ¼å¯ç¼–è¾‘åˆ—çš„åŸºç±»
     /// </summary>
     [ToolboxItem(false)]
     [ParseChildren(true)]
@@ -52,11 +52,11 @@ namespace FineUI
         private string _dataField = String.Empty;
 
         /// <summary>
-        /// ×Ö¶ÎÃû³Æ
+        /// å­—æ®µåç§°
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue("")]
-        [Description("×Ö¶ÎÃû³Æ")]
+        [Description("å­—æ®µåç§°")]
         public string DataField
         {
             get
@@ -70,11 +70,11 @@ namespace FineUI
         }
 
         /// <summary>
-        /// ÆôÓÃ±¾ÁĞµÄµ¥Ôª¸ñ±à¼­¹¦ÄÜ
+        /// å¯ç”¨æœ¬åˆ—çš„å•å…ƒæ ¼ç¼–è¾‘åŠŸèƒ½
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue(true)]
-        [Description("ÆôÓÃ±¾ÁĞµÄµ¥Ôª¸ñ±à¼­¹¦ÄÜ")]
+        [Description("å¯ç”¨æœ¬åˆ—çš„å•å…ƒæ ¼ç¼–è¾‘åŠŸèƒ½")]
         public virtual bool EnableColumnEdit
         {
             get
@@ -93,15 +93,15 @@ namespace FineUI
         #region OnAjaxPreRender
 
         /// <summary>
-        /// äÖÈ¾ HTML Ö®Ç°µ÷ÓÃ£¨AJAX»Ø·¢£©
+        /// æ¸²æŸ“ HTML ä¹‹å‰è°ƒç”¨ï¼ˆAJAXå›å‘ï¼‰
         /// </summary>
         protected override void OnAjaxPreRender()
         {
-            // µ÷ÓÃ base.OnAjaxPreRender ·½·¨£¬ÕâÑù Hidden µÈÊôĞÔ¸Ä±ä¾Í¼ÇÂ¼ÔÚ GridColumn ÖĞ£¬¶øÎŞĞè Grid ÖĞµÄAJAXÊôĞÔ HiddenColumns
+            // è°ƒç”¨ base.OnAjaxPreRender æ–¹æ³•ï¼Œè¿™æ · Hidden ç­‰å±æ€§æ”¹å˜å°±è®°å½•åœ¨ GridColumn ä¸­ï¼Œè€Œæ— éœ€ Grid ä¸­çš„AJAXå±æ€§ HiddenColumns
             base.OnAjaxPreRender();
 
 
-            //// ±í¸ñÁĞ¿Ø¼ş¼àÊÓ²¿·ÖÁĞÊôĞÔµÄ¸Ä±ä
+            //// è¡¨æ ¼åˆ—æ§ä»¶ç›‘è§†éƒ¨åˆ†åˆ—å±æ€§çš„æ”¹å˜
             //StringBuilder sb = new StringBuilder();
 
             //if (PropertyModified("EnableColumnEdit"))
@@ -115,10 +115,10 @@ namespace FineUI
 
             //if (sb.Length > 0)
             //{
-            //    // Êä³ö±í¸ñµÄ¶ÌÃû³Æ£¬ºóÃæ»áµ÷ÓÃ f_loadData
+            //    // è¾“å‡ºè¡¨æ ¼çš„çŸ­åç§°ï¼Œåé¢ä¼šè°ƒç”¨ f_loadData
             //    ResourceManager.Instance.AddAjaxShortName(Grid.ClientID, Grid.XID);
 
-            //    // ¸æËß ResponseFilter£¬Òªµ÷ÓÃ f_loadData£¬ÒòÎª±í¸ñÁĞÊôĞÔ¸Ä±äÁË
+            //    // å‘Šè¯‰ ResponseFilterï¼Œè¦è°ƒç”¨ f_loadDataï¼Œå› ä¸ºè¡¨æ ¼åˆ—å±æ€§æ”¹å˜äº†
             //    PageManager.Instance.AddAjaxGridColumnChangedGridClientID(Grid.ClientID);
             //}
 
@@ -129,7 +129,7 @@ namespace FineUI
         #region OnFirstPreRender
 
         /// <summary>
-        /// äÖÈ¾ HTML Ö®Ç°µ÷ÓÃ£¨Ò³ÃæµÚÒ»´Î¼ÓÔØ»òÕßÆÕÍ¨»Ø·¢£©
+        /// æ¸²æŸ“ HTML ä¹‹å‰è°ƒç”¨ï¼ˆé¡µé¢ç¬¬ä¸€æ¬¡åŠ è½½æˆ–è€…æ™®é€šå›å‘ï¼‰
         /// </summary>
         protected override void OnFirstPreRender()
         {

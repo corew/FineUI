@@ -1,18 +1,18 @@
-
+ï»¿
 #region Comment
 
 /*
- * Project£º    FineUI
+ * Projectï¼š    FineUI
  * 
  * FileName:    RenderField.cs
  * CreatedOn:   2013-05-05
  * CreatedBy:   30372245@qq.com
  * 
  * 
- * Description£º
+ * Descriptionï¼š
  *      ->
  *   
- * History£º
+ * Historyï¼š
  *      ->
  * 
  * 
@@ -39,7 +39,7 @@ using System.Web.UI.WebControls;
 namespace FineUI
 {
     /// <summary>
-    /// ±í¸ñ¿É±à¼­ÁĞ
+    /// è¡¨æ ¼å¯ç¼–è¾‘åˆ—
     /// </summary>
     [ToolboxItem(false)]
     [ParseChildren(true)]
@@ -51,14 +51,14 @@ namespace FineUI
         private GridColumnEditorCollection _editor;
 
         /// <summary>
-        /// µ¥Ôª¸ñ±à¼­¿Ø¼ş
+        /// å•å…ƒæ ¼ç¼–è¾‘æ§ä»¶
         /// </summary>
         [Browsable(false)]
         [Category(CategoryName.OPTIONS)]
         [NotifyParentProperty(true)]
         [PersistenceMode(PersistenceMode.InnerProperty)]
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
-        [Description("µ¥Ôª¸ñ±à¼­¿Ø¼ş")]
+        [Description("å•å…ƒæ ¼ç¼–è¾‘æ§ä»¶")]
         [Editor(typeof(GridColumnEditorEditor), typeof(System.Drawing.Design.UITypeEditor))]
         public virtual GridColumnEditorCollection Editor
         {
@@ -80,11 +80,11 @@ namespace FineUI
         private FieldType _fieldType = FieldType.Auto;
 
         /// <summary>
-        /// ×Ö¶ÎÀàĞÍ
+        /// å­—æ®µç±»å‹
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue(FieldType.Auto)]
-        [Description("×Ö¶ÎÀàĞÍ")]
+        [Description("å­—æ®µç±»å‹")]
         public FieldType FieldType
         {
             get
@@ -101,11 +101,11 @@ namespace FineUI
         private Renderer _renderer = Renderer.None;
 
         /// <summary>
-        /// äÖÈ¾Æ÷
+        /// æ¸²æŸ“å™¨
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue(Renderer.None)]
-        [Description("äÖÈ¾Æ÷ÀàĞÍ")]
+        [Description("æ¸²æŸ“å™¨ç±»å‹")]
         public Renderer Renderer
         {
             get
@@ -121,11 +121,11 @@ namespace FineUI
         private string _rendererArgument = String.Empty;
 
         /// <summary>
-        /// äÖÈ¾Æ÷µÄ²ÎÊı
+        /// æ¸²æŸ“å™¨çš„å‚æ•°
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue("")]
-        [Description("äÖÈ¾Æ÷µÄ²ÎÊı")]
+        [Description("æ¸²æŸ“å™¨çš„å‚æ•°")]
         public string RendererArgument
         {
             get
@@ -142,11 +142,11 @@ namespace FineUI
         private string _rendererFunction = String.Empty;
 
         /// <summary>
-        /// ×Ô¶¨ÒåäÖÈ¾Æ÷º¯Êı£¨JavaScriptº¯Êı£©
+        /// è‡ªå®šä¹‰æ¸²æŸ“å™¨å‡½æ•°ï¼ˆJavaScriptå‡½æ•°ï¼‰
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue("")]
-        [Description("×Ô¶¨ÒåäÖÈ¾Æ÷º¯Êı£¨JavaScriptº¯Êı£©")]
+        [Description("è‡ªå®šä¹‰æ¸²æŸ“å™¨å‡½æ•°ï¼ˆJavaScriptå‡½æ•°ï¼‰")]
         public string RendererFunction
         {
             get
@@ -163,11 +163,11 @@ namespace FineUI
         //private string _dateFormat = String.Empty;
 
         ///// <summary>
-        ///// ÈÕÆÚ×Ö¶ÎµÄ¸ñÊ½»¯×Ö·û´®
+        ///// æ—¥æœŸå­—æ®µçš„æ ¼å¼åŒ–å­—ç¬¦ä¸²
         ///// </summary>
         //[Category(CategoryName.OPTIONS)]
         //[DefaultValue("")]
-        //[Description("ÈÕÆÚ×Ö¶ÎµÄ¸ñÊ½»¯×Ö·û´®")]
+        //[Description("æ—¥æœŸå­—æ®µçš„æ ¼å¼åŒ–å­—ç¬¦ä¸²")]
         //public string DateFormat
         //{
         //    get
@@ -184,11 +184,11 @@ namespace FineUI
         private string _nullDisplayText = String.Empty;
 
         /// <summary>
-        /// ´¦ÀíÊı¾İ¿âÖĞnullÖµ£¬Ä¬ÈÏÎª¿Õ×Ö·û´®
+        /// å¤„ç†æ•°æ®åº“ä¸­nullå€¼ï¼Œé»˜è®¤ä¸ºç©ºå­—ç¬¦ä¸²
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue("")]
-        [Description("´¦ÀíÊı¾İ¿âÖĞnullÖµ£¬Ä¬ÈÏÎª¿Õ×Ö·û´®")]
+        [Description("å¤„ç†æ•°æ®åº“ä¸­nullå€¼ï¼Œé»˜è®¤ä¸ºç©ºå­—ç¬¦ä¸²")]
         public string NullDisplayText
         {
             get
@@ -205,11 +205,11 @@ namespace FineUI
         private bool _htmlEncode = true;
 
         /// <summary>
-        /// ÏÔÊ¾Ö®Ç°½øĞĞHTML±àÂë£¨Ä¬ÈÏÎªtrue£©
+        /// æ˜¾ç¤ºä¹‹å‰è¿›è¡ŒHTMLç¼–ç ï¼ˆé»˜è®¤ä¸ºtrueï¼‰
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue(true)]
-        [Description("ÏÔÊ¾Ö®Ç°½øĞĞHTML±àÂë£¨Ä¬ÈÏÎªtrue£©")]
+        [Description("æ˜¾ç¤ºä¹‹å‰è¿›è¡ŒHTMLç¼–ç ï¼ˆé»˜è®¤ä¸ºtrueï¼‰")]
         public bool HtmlEncode
         {
             get
@@ -223,11 +223,11 @@ namespace FineUI
         }
 
         /// <summary>
-        /// ÆôÓÃ±¾ÁĞµÄµ¥Ôª¸ñ±à¼­¹¦ÄÜ£¨Èç¹ûÎ´¶¨ÒåEditor£¬Ôò´ËÊôĞÔÎªfalse£©
+        /// å¯ç”¨æœ¬åˆ—çš„å•å…ƒæ ¼ç¼–è¾‘åŠŸèƒ½ï¼ˆå¦‚æœæœªå®šä¹‰Editorï¼Œåˆ™æ­¤å±æ€§ä¸ºfalseï¼‰
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue(true)]
-        [Description("ÆôÓÃ±¾ÁĞµÄµ¥Ôª¸ñ±à¼­¹¦ÄÜ£¨Èç¹ûÎ´¶¨ÒåEditor£¬Ôò´ËÊôĞÔÎªfalse£©")]
+        [Description("å¯ç”¨æœ¬åˆ—çš„å•å…ƒæ ¼ç¼–è¾‘åŠŸèƒ½ï¼ˆå¦‚æœæœªå®šä¹‰Editorï¼Œåˆ™æ­¤å±æ€§ä¸ºfalseï¼‰")]
         public override bool EnableColumnEdit
         {
             get
@@ -239,7 +239,7 @@ namespace FineUI
                 }
                 else
                 {
-                    // Èç¹ûÎ´¶¨Òå Editor£¬Ôò´ËÊôĞÔÎªfalse
+                    // å¦‚æœæœªå®šä¹‰ Editorï¼Œåˆ™æ­¤å±æ€§ä¸ºfalse
                     return false;
                 }
             }
@@ -376,7 +376,7 @@ namespace FineUI
         #region OnFirstPreRender
 
         /// <summary>
-        /// äÖÈ¾ HTML Ö®Ç°µ÷ÓÃ£¨Ò³ÃæµÚÒ»´Î¼ÓÔØ»òÕßÆÕÍ¨»Ø·¢£©
+        /// æ¸²æŸ“ HTML ä¹‹å‰è°ƒç”¨ï¼ˆé¡µé¢ç¬¬ä¸€æ¬¡åŠ è½½æˆ–è€…æ™®é€šå›å‘ï¼‰
         /// </summary>
         protected override void OnFirstPreRender()
         {

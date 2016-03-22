@@ -1,18 +1,18 @@
-
+ï»¿
 #region Comment
 
 /*
- * Project£º    FineUI
+ * Projectï¼š    FineUI
  * 
  * FileName:    GridRowCollection.cs
  * CreatedOn:   2008-05-19
  * CreatedBy:   30372245@qq.com
  * 
  * 
- * Description£º
+ * Descriptionï¼š
  *      ->
  *   
- * History£º
+ * Historyï¼š
  *      ->
  * 
  * 
@@ -32,7 +32,7 @@ using System.Web.UI;
 namespace FineUI
 {
     /// <summary>
-    /// ±í¸ñĞĞ¿Ø¼ş¼¯ºÏ
+    /// è¡¨æ ¼è¡Œæ§ä»¶é›†åˆ
     /// </summary>
     public class GridRowCollection : Collection<GridRow>
     {

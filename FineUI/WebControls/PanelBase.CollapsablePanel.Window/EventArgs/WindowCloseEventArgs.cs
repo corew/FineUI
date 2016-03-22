@@ -1,18 +1,18 @@
-
+ï»¿
 #region Comment
 
 /*
- * Project£º    FineUI
+ * Projectï¼š    FineUI
  * 
  * FileName:    WindowCloseEventArgs.cs
  * CreatedOn:   2008-06-27
  * CreatedBy:   30372245@qq.com
  * 
  * 
- * Description£º
+ * Descriptionï¼š
  *      ->
  *   
- * History£º
+ * Historyï¼š
  *      ->
  * 
  * 
@@ -32,7 +32,7 @@ using System.Web.UI;
 namespace FineUI
 {
     /// <summary>
-    /// ´°Ìå¹Ø±ÕÊÂ¼ş²ÎÊı
+    /// çª—ä½“å…³é—­äº‹ä»¶å‚æ•°
     /// </summary>
     public class WindowCloseEventArgs : EventArgs
     {
@@ -40,7 +40,7 @@ namespace FineUI
         private string _closeArgument;
 
         /// <summary>
-        /// ¹Ø±Õ²ÎÊı
+        /// å…³é—­å‚æ•°
         /// </summary>
         public string CloseArgument
         {
@@ -50,9 +50,9 @@ namespace FineUI
 
 
         /// <summary>
-        /// ¹¹Ôìº¯Êı
+        /// æ„é€ å‡½æ•°
         /// </summary>
-        /// <param name="closeArgument">¹Ø±Õ²ÎÊı</param>
+        /// <param name="closeArgument">å…³é—­å‚æ•°</param>
         public WindowCloseEventArgs(string closeArgument)
         {
             _closeArgument = closeArgument;

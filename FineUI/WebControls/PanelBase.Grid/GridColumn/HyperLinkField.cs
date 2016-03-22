@@ -1,18 +1,18 @@
-
+ï»¿
 #region Comment
 
 /*
- * Project£º    FineUI
+ * Projectï¼š    FineUI
  * 
  * FileName:    HyperLinkField.cs
  * CreatedOn:   2008-05-27
  * CreatedBy:   30372245@qq.com
  * 
  * 
- * Description£º
+ * Descriptionï¼š
  *      ->
  *   
- * History£º
+ * Historyï¼š
  *      ->
  * 
  * 
@@ -39,7 +39,7 @@ using System.Web.UI.WebControls;
 namespace FineUI
 {
     /// <summary>
-    /// ±í¸ñ³¬Á´½ÓÁĞ
+    /// è¡¨æ ¼è¶…é“¾æ¥åˆ—
     /// </summary>
     [ToolboxItem(false)]
     [ParseChildren(true)]
@@ -52,11 +52,11 @@ namespace FineUI
         private bool _enabled = true;
 
         /// <summary>
-        /// ÊÇ·ñ¿ÉÓÃ
+        /// æ˜¯å¦å¯ç”¨
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue(true)]
-        [Description("ÊÇ·ñ¿ÉÓÃ")]
+        [Description("æ˜¯å¦å¯ç”¨")]
         public override bool Enabled
         {
             get
@@ -72,11 +72,11 @@ namespace FineUI
         private string _dataTextField = String.Empty;
 
         /// <summary>
-        /// ×Ö¶ÎÃû³Æ
+        /// å­—æ®µåç§°
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue("")]
-        [Description("×Ö¶ÎÃû³Æ")]
+        [Description("å­—æ®µåç§°")]
         public string DataTextField
         {
             get
@@ -92,11 +92,11 @@ namespace FineUI
         private string _dataTextFormatString = String.Empty;
         
         /// <summary>
-        /// ×Ö¶Î¸ñÊ½»¯×Ö·û´®
+        /// å­—æ®µæ ¼å¼åŒ–å­—ç¬¦ä¸²
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue("")]
-        [Description("×Ö¶Î¸ñÊ½»¯×Ö·û´®")]
+        [Description("å­—æ®µæ ¼å¼åŒ–å­—ç¬¦ä¸²")]
         public string DataTextFormatString
         {
             get
@@ -112,11 +112,11 @@ namespace FineUI
         private string[] _dataNavigateUrlFields = null;
 
         /// <summary>
-        /// °ó¶¨µ½³¬Á´½ÓµØÖ·µÄ×Ö¶ÎÃû³ÆÁĞ±í
+        /// ç»‘å®šåˆ°è¶…é“¾æ¥åœ°å€çš„å­—æ®µåç§°åˆ—è¡¨
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue(null)]
-        [Description("°ó¶¨µ½³¬Á´½ÓµØÖ·µÄ×Ö¶ÎÃû³ÆÁĞ±í")]
+        [Description("ç»‘å®šåˆ°è¶…é“¾æ¥åœ°å€çš„å­—æ®µåç§°åˆ—è¡¨")]
         [TypeConverter(typeof(StringArrayConverter))]
         public string[] DataNavigateUrlFields
         {
@@ -133,11 +133,11 @@ namespace FineUI
         //private bool _dataNavigateUrlFieldsEncode = false;
 
         /// <summary>
-        /// ¶ÔÃ¿¸ö°ó¶¨µ½³¬Á´½ÓµØÖ·µÄ×Ö¶Î½øĞĞURL±àÂë£¨´ËÊôĞÔ·ÏÆú£¬ÇëÊ¹ÓÃUrlEncodeÊôĞÔ£©
+        /// å¯¹æ¯ä¸ªç»‘å®šåˆ°è¶…é“¾æ¥åœ°å€çš„å­—æ®µè¿›è¡ŒURLç¼–ç ï¼ˆæ­¤å±æ€§åºŸå¼ƒï¼Œè¯·ä½¿ç”¨UrlEncodeå±æ€§ï¼‰
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue(true)]
-        [Description("¶ÔÃ¿¸ö°ó¶¨µ½³¬Á´½ÓµØÖ·µÄ×Ö¶Î½øĞĞURL±àÂë£¨´ËÊôĞÔ·ÏÆú£¬ÇëÊ¹ÓÃUrlEncodeÊôĞÔ£©")]
+        [Description("å¯¹æ¯ä¸ªç»‘å®šåˆ°è¶…é“¾æ¥åœ°å€çš„å­—æ®µè¿›è¡ŒURLç¼–ç ï¼ˆæ­¤å±æ€§åºŸå¼ƒï¼Œè¯·ä½¿ç”¨UrlEncodeå±æ€§ï¼‰")]
         public bool DataNavigateUrlFieldsEncode
         {
             get
@@ -154,11 +154,11 @@ namespace FineUI
         private bool _urlEncode = true;
 
         /// <summary>
-        /// ¶ÔÃ¿¸ö°ó¶¨µ½³¬Á´½ÓµØÖ·µÄ×Ö¶Î½øĞĞURL±àÂë£¨Ä¬ÈÏÎªtrue£©
+        /// å¯¹æ¯ä¸ªç»‘å®šåˆ°è¶…é“¾æ¥åœ°å€çš„å­—æ®µè¿›è¡ŒURLç¼–ç ï¼ˆé»˜è®¤ä¸ºtrueï¼‰
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue(true)]
-        [Description("¶ÔÃ¿¸ö°ó¶¨µ½³¬Á´½ÓµØÖ·µÄ×Ö¶Î½øĞĞURL±àÂë")]
+        [Description("å¯¹æ¯ä¸ªç»‘å®šåˆ°è¶…é“¾æ¥åœ°å€çš„å­—æ®µè¿›è¡ŒURLç¼–ç ")]
         public bool UrlEncode
         {
             get
@@ -175,11 +175,11 @@ namespace FineUI
         private string _dataNavigateUrlFormatString = String.Empty;
 
         /// <summary>
-        /// °ó¶¨µ½³¬Á´½ÓµØÖ·µÄ×Ö¶Î¸ñÊ½»¯×Ö·û´®
+        /// ç»‘å®šåˆ°è¶…é“¾æ¥åœ°å€çš„å­—æ®µæ ¼å¼åŒ–å­—ç¬¦ä¸²
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue("")]
-        [Description("°ó¶¨µ½³¬Á´½ÓµØÖ·µÄ×Ö¶Î¸ñÊ½»¯×Ö·û´®")]
+        [Description("ç»‘å®šåˆ°è¶…é“¾æ¥åœ°å€çš„å­—æ®µæ ¼å¼åŒ–å­—ç¬¦ä¸²")]
         public string DataNavigateUrlFormatString
         {
             get
@@ -195,11 +195,11 @@ namespace FineUI
         private string _target = String.Empty;
 
         /// <summary>
-        /// ´ò¿ª³¬Á´½ÓµÄÄ¿±ê¿ò¼Ü
+        /// æ‰“å¼€è¶…é“¾æ¥çš„ç›®æ ‡æ¡†æ¶
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue("")]
-        [Description("´ò¿ª³¬Á´½ÓµÄÄ¿±ê¿ò¼Ü")]
+        [Description("æ‰“å¼€è¶…é“¾æ¥çš„ç›®æ ‡æ¡†æ¶")]
         public string Target
         {
             get
@@ -216,11 +216,11 @@ namespace FineUI
         private string _navigateUrl = String.Empty;
 
         /// <summary>
-        /// ³¬Á´½ÓµØÖ·
+        /// è¶…é“¾æ¥åœ°å€
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue("")]
-        [Description("³¬Á´½ÓµØÖ·")]
+        [Description("è¶…é“¾æ¥åœ°å€")]
         public string NavigateUrl
         {
             get
@@ -236,11 +236,11 @@ namespace FineUI
         private string _text = String.Empty;
 
         /// <summary>
-        /// ³¬Á´½ÓÎÄ±¾
+        /// è¶…é“¾æ¥æ–‡æœ¬
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue("")]
-        [Description("³¬Á´½ÓÎÄ±¾")]
+        [Description("è¶…é“¾æ¥æ–‡æœ¬")]
         public string Text
         {
             get
@@ -258,11 +258,11 @@ namespace FineUI
         private bool _htmlEncode = true;
 
         /// <summary>
-        /// ÏÔÊ¾Ö®Ç°½øĞĞHTML±àÂë£¨Ä¬ÈÏÎªtrue£©
+        /// æ˜¾ç¤ºä¹‹å‰è¿›è¡ŒHTMLç¼–ç ï¼ˆé»˜è®¤ä¸ºtrueï¼‰
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue(true)]
-        [Description("ÏÔÊ¾Ö®Ç°½øĞĞHTML±àÂë£¨Ä¬ÈÏÎªtrue£©")]
+        [Description("æ˜¾ç¤ºä¹‹å‰è¿›è¡ŒHTMLç¼–ç ï¼ˆé»˜è®¤ä¸ºtrueï¼‰")]
         public bool HtmlEncode
         {
             get
@@ -279,11 +279,11 @@ namespace FineUI
         private bool _htmlEncodeFormatString = true;
 
         /// <summary>
-        /// ÊÇ·ñÔÚÓ¦ÓÃDataFormatStringÊôĞÔÖ®ºó½øĞĞHTML±àÂë£¨Ä¬ÈÏÎªtrue£©
+        /// æ˜¯å¦åœ¨åº”ç”¨DataFormatStringå±æ€§ä¹‹åè¿›è¡ŒHTMLç¼–ç ï¼ˆé»˜è®¤ä¸ºtrueï¼‰
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue(true)]
-        [Description("ÊÇ·ñÔÚÓ¦ÓÃDataFormatStringÊôĞÔÖ®ºó½øĞĞHTML±àÂë£¨Ä¬ÈÏÎªtrue£©")]
+        [Description("æ˜¯å¦åœ¨åº”ç”¨DataFormatStringå±æ€§ä¹‹åè¿›è¡ŒHTMLç¼–ç ï¼ˆé»˜è®¤ä¸ºtrueï¼‰")]
         public bool HtmlEncodeFormatString
         {
             get
@@ -444,7 +444,7 @@ namespace FineUI
         #region OnFirstPreRender
 
         /// <summary>
-        /// äÖÈ¾ HTML Ö®Ç°µ÷ÓÃ£¨Ò³ÃæµÚÒ»´Î¼ÓÔØ»òÕßÆÕÍ¨»Ø·¢£©
+        /// æ¸²æŸ“ HTML ä¹‹å‰è°ƒç”¨ï¼ˆé¡µé¢ç¬¬ä¸€æ¬¡åŠ è½½æˆ–è€…æ™®é€šå›å‘ï¼‰
         /// </summary>
         protected override void OnFirstPreRender()
         {

@@ -1,18 +1,18 @@
-
+ï»¿
 #region Comment
 
 /*
- * Project£º    FineUI
+ * Projectï¼š    FineUI
  * 
  * FileName:    TreeNode.cs
  * CreatedOn:   2008-07-21
  * CreatedBy:   30372245@qq.com
  * 
  * 
- * Description£º
+ * Descriptionï¼š
  *      ->
  *   
- * History£º
+ * Historyï¼š
  *      ->
  * 
  * 
@@ -36,7 +36,7 @@ using System.Web.UI.WebControls;
 namespace FineUI
 {
     /// <summary>
-    /// Ê÷½Úµã
+    /// æ ‘èŠ‚ç‚¹
     /// </summary>
     [ToolboxItem(false)]
     [ParseChildren(true, DefaultProperty = "Nodes")]
@@ -48,7 +48,7 @@ namespace FineUI
         private Tree _tree;
 
         /// <summary>
-        /// Ê÷ÊµÀı
+        /// æ ‘å®ä¾‹
         /// </summary>
         public Tree TreeInstance
         {
@@ -65,7 +65,7 @@ namespace FineUI
         private TreeNode _parentNode;
 
         /// <summary>
-        /// ¸¸½Úµã
+        /// çˆ¶èŠ‚ç‚¹
         /// </summary>
         public TreeNode ParentNode
         {
@@ -87,7 +87,7 @@ namespace FineUI
         private TreeNodeCollection _nodes;
 
         /// <summary>
-        /// Ê÷½Úµã¼¯ºÏ
+        /// æ ‘èŠ‚ç‚¹é›†åˆ
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [NotifyParentProperty(true)]
@@ -98,16 +98,16 @@ namespace FineUI
             {
                 if (_nodes == null)
                 {
-                    // Èç¹û²»¼ÓÉÏ TreeInstance == null µÄÅĞ¶Ï£¬ÔòÔÚÉè¼ÆÊ±³öÏÖÈçÏÂ´íÎó
-                    // ÎŞ·¨´ÓÆä ParentNode ÊôĞÔµÄ×Ö·û´®±íÊ¾ĞÎÊ½ FineUI.TreeNode ´´½¨ FineUI.TreeNode ÀàĞÍµÄ¶ÔÏó
+                    // å¦‚æœä¸åŠ ä¸Š TreeInstance == null çš„åˆ¤æ–­ï¼Œåˆ™åœ¨è®¾è®¡æ—¶å‡ºç°å¦‚ä¸‹é”™è¯¯
+                    // æ— æ³•ä»å…¶ ParentNode å±æ€§çš„å­—ç¬¦ä¸²è¡¨ç¤ºå½¢å¼ FineUI.TreeNode åˆ›å»º FineUI.TreeNode ç±»å‹çš„å¯¹è±¡
                     if (TreeInstance == null)
                     {
                         _nodes = new TreeNodeCollection(null, null);
                     }
                     else
                     {
-                        // ÓĞÊ±TreeInstanceÎªnull£¬±ÈÈçÔÚASPXÉèÖÃNodes½ÚµãÊ±
-                        // ÓĞÊ±TreeInstance²»Îªnull£¬±ÈÈçÍ¨¹ı±à³ÌµÄÊÖ¶Î£¬ÏÈÌí¼Ó¸ù½Úµã£¬È»ºóÌí¼Ó×Ó½Úµã
+                        // æœ‰æ—¶TreeInstanceä¸ºnullï¼Œæ¯”å¦‚åœ¨ASPXè®¾ç½®NodesèŠ‚ç‚¹æ—¶
+                        // æœ‰æ—¶TreeInstanceä¸ä¸ºnullï¼Œæ¯”å¦‚é€šè¿‡ç¼–ç¨‹çš„æ‰‹æ®µï¼Œå…ˆæ·»åŠ æ ¹èŠ‚ç‚¹ï¼Œç„¶åæ·»åŠ å­èŠ‚ç‚¹
                         _nodes = new TreeNodeCollection(TreeInstance, this);
                     }
                 }
@@ -121,11 +121,11 @@ namespace FineUI
 
         private bool _enableExpandEvent = false;
         /// <summary>
-        /// Õ¹¿ªÊ÷½ÚµãÊÇ·ñ»Ø·¢
+        /// å±•å¼€æ ‘èŠ‚ç‚¹æ˜¯å¦å›å‘
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue(false)]
-        [Description("Õ¹¿ªÊ÷½ÚµãÊÇ·ñ»Ø·¢")]
+        [Description("å±•å¼€æ ‘èŠ‚ç‚¹æ˜¯å¦å›å‘")]
         public bool EnableExpandEvent
         {
             get
@@ -140,11 +140,11 @@ namespace FineUI
 
         private bool _enableCollapseEvent = false;
         /// <summary>
-        /// ÕÛµşÊ÷½ÚµãÊÇ·ñ»Ø·¢
+        /// æŠ˜å æ ‘èŠ‚ç‚¹æ˜¯å¦å›å‘
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue(false)]
-        [Description("ÕÛµşÊ÷½ÚµãÊÇ·ñ»Ø·¢")]
+        [Description("æŠ˜å æ ‘èŠ‚ç‚¹æ˜¯å¦å›å‘")]
         public bool EnableCollapseEvent
         {
             get
@@ -163,11 +163,11 @@ namespace FineUI
 
         private bool _enablePostBack = false;
         /// <summary>
-        /// µ¥»÷Ê÷½ÚµãÊÇ·ñ»Ø·¢
+        /// å•å‡»æ ‘èŠ‚ç‚¹æ˜¯å¦å›å‘
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue(false)]
-        [Description("µ¥»÷Ê÷½ÚµãÊÇ·ñ»Ø·¢")]
+        [Description("å•å‡»æ ‘èŠ‚ç‚¹æ˜¯å¦å›å‘")]
         public bool EnableClickEvent
         {
             get
@@ -182,11 +182,11 @@ namespace FineUI
 
         private string _onClientClick = String.Empty;
         /// <summary>
-        /// µã»÷°´Å¥Ê±ĞèÒªÖ´ĞĞµÄ¿Í»§¶Ë½Å±¾
+        /// ç‚¹å‡»æŒ‰é’®æ—¶éœ€è¦æ‰§è¡Œçš„å®¢æˆ·ç«¯è„šæœ¬
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue("")]
-        [Description("µã»÷°´Å¥Ê±ĞèÒªÖ´ĞĞµÄ¿Í»§¶Ë½Å±¾")]
+        [Description("ç‚¹å‡»æŒ‰é’®æ—¶éœ€è¦æ‰§è¡Œçš„å®¢æˆ·ç«¯è„šæœ¬")]
         public string OnClientClick
         {
             get
@@ -205,11 +205,11 @@ namespace FineUI
 
         private string _commandName = String.Empty;
         /// <summary>
-        /// ÃüÁîÃû³Æ
+        /// å‘½ä»¤åç§°
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue("")]
-        [Description("ÃüÁîÃû³Æ")]
+        [Description("å‘½ä»¤åç§°")]
         public string CommandName
         {
             get
@@ -224,11 +224,11 @@ namespace FineUI
 
         private string _commandArgument = String.Empty;
         /// <summary>
-        /// ÃüÁî²ÎÊı
+        /// å‘½ä»¤å‚æ•°
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue("")]
-        [Description("ÃüÁî²ÎÊı")]
+        [Description("å‘½ä»¤å‚æ•°")]
         public string CommandArgument
         {
             get
@@ -248,11 +248,11 @@ namespace FineUI
 
         private bool _checked = false;
         /// <summary>
-        /// ÊÇ·ñÑ¡ÖĞ
+        /// æ˜¯å¦é€‰ä¸­
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue(false)]
-        [Description("ÊÇ·ñÑ¡ÖĞ")]
+        [Description("æ˜¯å¦é€‰ä¸­")]
         public bool Checked
         {
             get
@@ -267,11 +267,11 @@ namespace FineUI
 
         private bool _enableCheckBox = false;
         /// <summary>
-        /// ÊÇ·ñÆôÓÃ¸´Ñ¡¿ò
+        /// æ˜¯å¦å¯ç”¨å¤é€‰æ¡†
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue(false)]
-        [Description("ÊÇ·ñÆôÓÃ¸´Ñ¡¿ò")]
+        [Description("æ˜¯å¦å¯ç”¨å¤é€‰æ¡†")]
         public bool EnableCheckBox
         {
             get
@@ -287,11 +287,11 @@ namespace FineUI
         private bool _enableCheckEvent = false;
 
         /// <summary>
-        /// ¸Ä±ä¸´Ñ¡¿ò×´Ì¬ÊÇ·ñ×Ô¶¯»Ø·¢
+        /// æ”¹å˜å¤é€‰æ¡†çŠ¶æ€æ˜¯å¦è‡ªåŠ¨å›å‘
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue(false)]
-        [Description("¸Ä±ä¸´Ñ¡¿ò×´Ì¬ÊÇ·ñ×Ô¶¯»Ø·¢")]
+        [Description("æ”¹å˜å¤é€‰æ¡†çŠ¶æ€æ˜¯å¦è‡ªåŠ¨å›å‘")]
         public bool EnableCheckEvent
         {
             get
@@ -311,11 +311,11 @@ namespace FineUI
 
         private string _cssClass = String.Empty;
         /// <summary>
-        /// ½ÚµãÑùÊ½Àà
+        /// èŠ‚ç‚¹æ ·å¼ç±»
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue("")]
-        [Description("½ÚµãÑùÊ½Àà")]
+        [Description("èŠ‚ç‚¹æ ·å¼ç±»")]
         public string CssClass
         {
             get
@@ -332,11 +332,11 @@ namespace FineUI
 
         private string _text = String.Empty;
         /// <summary>
-        /// ÎÄ±¾
+        /// æ–‡æœ¬
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue("")]
-        [Description("ÎÄ±¾")]
+        [Description("æ–‡æœ¬")]
         public string Text
         {
             get
@@ -351,11 +351,11 @@ namespace FineUI
 
         private string _nodeID = String.Empty;
         /// <summary>
-        /// Ê÷½ÚµãID
+        /// æ ‘èŠ‚ç‚¹ID
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue("")]
-        [Description("Ê÷½ÚµãID")]
+        [Description("æ ‘èŠ‚ç‚¹ID")]
         public string NodeID
         {
             get
@@ -372,7 +372,7 @@ namespace FineUI
                 //object obj = ViewState["NodeID"];
                 //if (obj == null)
                 //{
-                //    // Éú³ÉGUIDµÄ·½Ê½Ì«Õ¼ViewState
+                //    // ç”ŸæˆGUIDçš„æ–¹å¼å¤ªå ViewState
                 //    //obj = ViewState["NodeID"] = Guid.NewGuid().ToString();
                 //    //obj = ViewState["NodeID"] = String.Format("{0}_n{1}", TreeInstance.ClientJavascriptID, _nextNodeIndex++);
 
@@ -390,11 +390,11 @@ namespace FineUI
 
         private bool _leaf = false;
         /// <summary>
-        /// ÊÇ·ñÒ¶×Ó½Úµã
+        /// æ˜¯å¦å¶å­èŠ‚ç‚¹
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue(false)]
-        [Description("ÊÇ·ñÒ¶×Ó½Úµã")]
+        [Description("æ˜¯å¦å¶å­èŠ‚ç‚¹")]
         public bool Leaf
         {
             get
@@ -409,11 +409,11 @@ namespace FineUI
 
         private bool _enabled = true;
         /// <summary>
-        /// ÊÇ·ñ¿ÉÓÃ
+        /// æ˜¯å¦å¯ç”¨
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue(true)]
-        [Description("ÊÇ·ñ¿ÉÓÃ")]
+        [Description("æ˜¯å¦å¯ç”¨")]
         public bool Enabled
         {
             get
@@ -429,11 +429,11 @@ namespace FineUI
 
         private bool _expanded = false;
         /// <summary>
-        /// ÊÇ·ñÕ¹¿ª
+        /// æ˜¯å¦å±•å¼€
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue(false)]
-        [Description("ÊÇ·ñÕ¹¿ª")]
+        [Description("æ˜¯å¦å±•å¼€")]
         public bool Expanded
         {
             get
@@ -448,11 +448,11 @@ namespace FineUI
 
         private string _target = String.Empty;
         /// <summary>
-        /// Á´½ÓÄ¿±ê
+        /// é“¾æ¥ç›®æ ‡
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue("")]
-        [Description("Á´½ÓÄ¿±ê")]
+        [Description("é“¾æ¥ç›®æ ‡")]
         public string Target
         {
             get
@@ -468,11 +468,11 @@ namespace FineUI
 
         private string _navigateUrl = String.Empty;
         /// <summary>
-        /// Á´½ÓµØÖ·
+        /// é“¾æ¥åœ°å€
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue("")]
-        [Description("Á´½ÓµØÖ·")]
+        [Description("é“¾æ¥åœ°å€")]
         public string NavigateUrl
         {
             get
@@ -488,11 +488,11 @@ namespace FineUI
 
         //private string _iconUrl = String.Empty;
         ///// <summary>
-        ///// Í¼±êµØÖ·
+        ///// å›¾æ ‡åœ°å€
         ///// </summary>
         //[Category(CategoryName.OPTIONS)]
         //[DefaultValue("")]
-        //[Description("Í¼±êµØÖ·")]
+        //[Description("å›¾æ ‡åœ°å€")]
         //[Editor(typeof(ImageUrlEditor), typeof(UITypeEditor))]
         //public string IconUrl
         //{
@@ -515,11 +515,11 @@ namespace FineUI
 
         private string _iconUrl = String.Empty;
         /// <summary>
-        /// Í¼±êµØÖ·
+        /// å›¾æ ‡åœ°å€
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue("")]
-        [Description("Í¼±êµØÖ·")]
+        [Description("å›¾æ ‡åœ°å€")]
         [Editor(typeof(ImageUrlEditor), typeof(UITypeEditor))]
         public string IconUrl
         {
@@ -536,11 +536,11 @@ namespace FineUI
 
         private Icon _icon = Icon.None;
         /// <summary>
-        /// Ô¤¶¨ÒåÍ¼±ê
+        /// é¢„å®šä¹‰å›¾æ ‡
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue(Icon.None)]
-        [Description("Ô¤¶¨ÒåÍ¼±ê")]
+        [Description("é¢„å®šä¹‰å›¾æ ‡")]
         public virtual Icon Icon
         {
             get
@@ -555,11 +555,11 @@ namespace FineUI
 
         private string _toolTip = String.Empty;
         /// <summary>
-        /// ÌáÊ¾ÎÄ±¾
+        /// æç¤ºæ–‡æœ¬
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue("")]
-        [Description("ÌáÊ¾ÎÄ±¾")]
+        [Description("æç¤ºæ–‡æœ¬")]
         public string ToolTip
         {
             get
@@ -574,11 +574,11 @@ namespace FineUI
 
         //private bool _singleClickExpand = false;
         ///// <summary>
-        ///// µ¥»÷¿ÉÇĞ»»½ÚµãµÄÕÛµşÕ¹¿ª×´Ì¬
+        ///// å•å‡»å¯åˆ‡æ¢èŠ‚ç‚¹çš„æŠ˜å å±•å¼€çŠ¶æ€
         ///// </summary>
         //[Category(CategoryName.OPTIONS)]
         //[DefaultValue(false)]
-        //[Description("µ¥»÷¿ÉÇĞ»»½ÚµãµÄÕÛµşÕ¹¿ª×´Ì¬")]
+        //[Description("å•å‡»å¯åˆ‡æ¢èŠ‚ç‚¹çš„æŠ˜å å±•å¼€çŠ¶æ€")]
         //public bool SingleClickExpand
         //{
         //    get
@@ -597,17 +597,17 @@ namespace FineUI
         #region private DataBindRow
 
         ///// <summary>
-        ///// °ó¶¨ĞĞµÄÖµ
+        ///// ç»‘å®šè¡Œçš„å€¼
         ///// </summary>
         //public void DataBindRow()
         //{
         //    #region old code
-        //    //// Èç¹ûÃ»ÓĞ³õÊ¼»¯Values£¬Ôò³õÊ¼»¯
+        //    //// å¦‚æœæ²¡æœ‰åˆå§‹åŒ–Valuesï¼Œåˆ™åˆå§‹åŒ–
         //    //if (Values == null)
         //    //{
         //    //    GridColumnCollection columns = _grid.Columns;
 
-        //    //    // ¼ÆËãÃ¿ÁĞµÄÖµ
+        //    //    // è®¡ç®—æ¯åˆ—çš„å€¼
         //    //    Values = new object[columns.Count];
         //    //    ExtraValues = new object[columns.Count];
         //    //    for (int i = 0, count = columns.Count; i < count; i++)
@@ -615,7 +615,7 @@ namespace FineUI
         //    //        Values[i] = columns[i].GetColumnValue(this);
         //    //    }
 
-        //    //    // ¼ÆËãDataKeysµÄÖµ
+        //    //    // è®¡ç®—DataKeysçš„å€¼
         //    //    if (_grid.DataKeyNames != null)
         //    //    {
         //    //        string[] keyNames = _grid.DataKeyNames;
@@ -626,7 +626,7 @@ namespace FineUI
         //    //        }
         //    //    }
 
-        //    //    //// CheckBoxFieldĞèÒªÌØÊâ´¦Àí
+        //    //    //// CheckBoxFieldéœ€è¦ç‰¹æ®Šå¤„ç†
         //    //    //for (int i = 0, count = columns.Count; i < count; i++)
         //    //    //{
         //    //    //    CheckBoxField cbField = columns[i] as CheckBoxField;
@@ -644,7 +644,7 @@ namespace FineUI
         #region GetPropertyValue
 
         ///// <summary>
-        ///// È¡µÃÊôĞÔµÄÖµ
+        ///// å–å¾—å±æ€§çš„å€¼
         ///// </summary>
         ///// <param name="rowObj"></param>
         ///// <param name="propertyName"></param>
@@ -687,7 +687,7 @@ namespace FineUI
         }
 
         /// <summary>
-        /// ÉèÖÃÊôĞÔµÄÖµ
+        /// è®¾ç½®å±æ€§çš„å€¼
         /// </summary>
         /// <param name="name"></param>
         /// <param name="value"></param>

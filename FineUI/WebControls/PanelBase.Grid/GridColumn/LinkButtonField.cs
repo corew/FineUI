@@ -1,18 +1,18 @@
-
+ï»¿
 #region Comment
 
 /*
- * Project£º    FineUI
+ * Projectï¼š    FineUI
  * 
  * FileName:    LinkButtonField.cs
  * CreatedOn:   2008-06-23
  * CreatedBy:   30372245@qq.com
  * 
  * 
- * Description£º
+ * Descriptionï¼š
  *      ->
  *   
- * History£º
+ * Historyï¼š
  *      ->
  * 
  * 
@@ -41,7 +41,7 @@ using System.Drawing.Design;
 namespace FineUI
 {
     /// <summary>
-    /// ±í¸ñÁ´½Ó°´Å¥ÁĞ
+    /// è¡¨æ ¼é“¾æ¥æŒ‰é’®åˆ—
     /// </summary>
     [ToolboxItem(false)]
     [ParseChildren(true)]
@@ -60,11 +60,11 @@ namespace FineUI
 
         private bool _enableHeaderMenu = false;
         /// <summary>
-        /// ÆôÓÃ±íÍ·²Ëµ¥
+        /// å¯ç”¨è¡¨å¤´èœå•
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue(false)]
-        [Description("ÆôÓÃ±íÍ·²Ëµ¥")]
+        [Description("å¯ç”¨è¡¨å¤´èœå•")]
         public override bool EnableHeaderMenu
         {
             get
@@ -80,11 +80,11 @@ namespace FineUI
 
         private bool _allowHideColumn = false;
         /// <summary>
-        /// ÊÇ·ñÔÊĞíÒş²ØÁĞ
+        /// æ˜¯å¦å…è®¸éšè—åˆ—
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue(false)]
-        [Description("ÊÇ·ñÔÊĞíÒş²ØÁĞ")]
+        [Description("æ˜¯å¦å…è®¸éšè—åˆ—")]
         public override bool EnableColumnHide
         {
             get
@@ -105,11 +105,11 @@ namespace FineUI
         private string _dataTextField = String.Empty;
 
         /// <summary>
-        /// ×Ö¶ÎÃû³Æ
+        /// å­—æ®µåç§°
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue("")]
-        [Description("×Ö¶ÎÃû³Æ")]
+        [Description("å­—æ®µåç§°")]
         public string DataTextField
         {
             get
@@ -126,11 +126,11 @@ namespace FineUI
         private string _dataTextFormatString = String.Empty;
 
         /// <summary>
-        /// ×Ö¶Î¸ñÊ½»¯×Ö·û´®
+        /// å­—æ®µæ ¼å¼åŒ–å­—ç¬¦ä¸²
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue("")]
-        [Description("×Ö¶Î¸ñÊ½»¯×Ö·û´®")]
+        [Description("å­—æ®µæ ¼å¼åŒ–å­—ç¬¦ä¸²")]
         public string DataTextFormatString
         {
             get
@@ -147,11 +147,11 @@ namespace FineUI
         private string _text = String.Empty;
 
         /// <summary>
-        /// °´Å¥ÎÄ±¾
+        /// æŒ‰é’®æ–‡æœ¬
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue("")]
-        [Description("°´Å¥ÎÄ±¾")]
+        [Description("æŒ‰é’®æ–‡æœ¬")]
         public string Text
         {
             get
@@ -169,11 +169,11 @@ namespace FineUI
         private bool _htmlEncode = true;
 
         /// <summary>
-        /// ÏÔÊ¾Ö®Ç°½øĞĞHTML±àÂë£¨Ä¬ÈÏÎªtrue£©
+        /// æ˜¾ç¤ºä¹‹å‰è¿›è¡ŒHTMLç¼–ç ï¼ˆé»˜è®¤ä¸ºtrueï¼‰
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue(true)]
-        [Description("ÏÔÊ¾Ö®Ç°½øĞĞHTML±àÂë£¨Ä¬ÈÏÎªtrue£©")]
+        [Description("æ˜¾ç¤ºä¹‹å‰è¿›è¡ŒHTMLç¼–ç ï¼ˆé»˜è®¤ä¸ºtrueï¼‰")]
         public bool HtmlEncode
         {
             get
@@ -190,11 +190,11 @@ namespace FineUI
         private bool _htmlEncodeFormatString = true;
 
         /// <summary>
-        /// ÊÇ·ñÔÚÓ¦ÓÃDataFormatStringÊôĞÔÖ®ºó½øĞĞHTML±àÂë£¨Ä¬ÈÏÎªtrue£©
+        /// æ˜¯å¦åœ¨åº”ç”¨DataFormatStringå±æ€§ä¹‹åè¿›è¡ŒHTMLç¼–ç ï¼ˆé»˜è®¤ä¸ºtrueï¼‰
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue(true)]
-        [Description("ÊÇ·ñÔÚÓ¦ÓÃDataFormatStringÊôĞÔÖ®ºó½øĞĞHTML±àÂë£¨Ä¬ÈÏÎªtrue£©")]
+        [Description("æ˜¯å¦åœ¨åº”ç”¨DataFormatStringå±æ€§ä¹‹åè¿›è¡ŒHTMLç¼–ç ï¼ˆé»˜è®¤ä¸ºtrueï¼‰")]
         public bool HtmlEncodeFormatString
         {
             get
@@ -219,11 +219,11 @@ namespace FineUI
         private bool _enablePostBack = true;
 
         /// <summary>
-        /// ÊÇ·ñ¿ÉÒÔ»Ø·¢
+        /// æ˜¯å¦å¯ä»¥å›å‘
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue(true)]
-        [Description("ÊÇ·ñ¿ÉÒÔ»Ø·¢")]
+        [Description("æ˜¯å¦å¯ä»¥å›å‘")]
         public bool EnablePostBack
         {
             get
@@ -239,11 +239,11 @@ namespace FineUI
         private bool _enabled = true;
 
         /// <summary>
-        /// ÊÇ·ñ¿ÉÓÃ
+        /// æ˜¯å¦å¯ç”¨
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue(true)]
-        [Description("ÊÇ·ñ¿ÉÓÃ")]
+        [Description("æ˜¯å¦å¯ç”¨")]
         public override bool Enabled
         {
             get
@@ -259,11 +259,11 @@ namespace FineUI
         private string _onClientClick = String.Empty;
 
         /// <summary>
-        /// µã»÷°´Å¥Ê±ĞèÒªÖ´ĞĞµÄ¿Í»§¶Ë½Å±¾
+        /// ç‚¹å‡»æŒ‰é’®æ—¶éœ€è¦æ‰§è¡Œçš„å®¢æˆ·ç«¯è„šæœ¬
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue("")]
-        [Description("µã»÷°´Å¥Ê±ĞèÒªÖ´ĞĞµÄ¿Í»§¶Ë½Å±¾")]
+        [Description("ç‚¹å‡»æŒ‰é’®æ—¶éœ€è¦æ‰§è¡Œçš„å®¢æˆ·ç«¯è„šæœ¬")]
         public string OnClientClick
         {
             get
@@ -279,11 +279,11 @@ namespace FineUI
         private string[] _validateForms = null;
 
         /// <summary>
-        /// Ìá½»Ö®Ç°ĞèÒªÑéÖ¤µÄ±íµ¥Ãû³ÆÁĞ±í
+        /// æäº¤ä¹‹å‰éœ€è¦éªŒè¯çš„è¡¨å•åç§°åˆ—è¡¨
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue(null)]
-        [Description("Ìá½»Ö®Ç°ĞèÒªÑéÖ¤µÄ±íµ¥Ãû³ÆÁĞ±í")]
+        [Description("æäº¤ä¹‹å‰éœ€è¦éªŒè¯çš„è¡¨å•åç§°åˆ—è¡¨")]
         [TypeConverter(typeof(StringArrayConverter))]
         public string[] ValidateForms
         {
@@ -300,11 +300,11 @@ namespace FineUI
         private Target _validateTarget = Target.Self;
 
         /// <summary>
-        /// ÑéÖ¤Ê§°ÜÊ±ÌáÊ¾¶Ô»°¿òµ¯³öÎ»ÖÃ
+        /// éªŒè¯å¤±è´¥æ—¶æç¤ºå¯¹è¯æ¡†å¼¹å‡ºä½ç½®
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue(Target.Self)]
-        [Description("ÑéÖ¤Ê§°ÜÊ±ÌáÊ¾¶Ô»°¿òµ¯³öÎ»ÖÃ")]
+        [Description("éªŒè¯å¤±è´¥æ—¶æç¤ºå¯¹è¯æ¡†å¼¹å‡ºä½ç½®")]
         public Target ValidateTarget
         {
             get
@@ -320,11 +320,11 @@ namespace FineUI
         private bool _validateMessageBox = true;
 
         /// <summary>
-        /// ÑéÖ¤Ê§°ÜÊ±ÊÇ·ñ³öÏÖÌáÊ¾¶Ô»°¿ò
+        /// éªŒè¯å¤±è´¥æ—¶æ˜¯å¦å‡ºç°æç¤ºå¯¹è¯æ¡†
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue(true)]
-        [Description("ÑéÖ¤Ê§°ÜÊ±ÊÇ·ñ³öÏÖÌáÊ¾¶Ô»°¿ò")]
+        [Description("éªŒè¯å¤±è´¥æ—¶æ˜¯å¦å‡ºç°æç¤ºå¯¹è¯æ¡†")]
         public bool ValidateMessageBox
         {
             get
@@ -342,11 +342,11 @@ namespace FineUI
         private Icon _icon = Icon.None;
 
         /// <summary>
-        /// Í¼±ê
+        /// å›¾æ ‡
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue(Icon.None)]
-        [Description("Í¼±ê")]
+        [Description("å›¾æ ‡")]
         public Icon Icon
         {
             get
@@ -362,11 +362,11 @@ namespace FineUI
         private string _iconUrl = String.Empty;
 
         /// <summary>
-        /// Í¼±êµØÖ·
+        /// å›¾æ ‡åœ°å€
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue("")]
-        [Description("Í¼±êµØÖ·")]
+        [Description("å›¾æ ‡åœ°å€")]
         [Editor(typeof(ImageUrlEditor), typeof(UITypeEditor))]
         public string IconUrl
         {
@@ -387,11 +387,11 @@ namespace FineUI
         private string _confirmTitle = "";
 
         /// <summary>
-        /// È·ÈÏ¶Ô»°¿ò±êÌâ
+        /// ç¡®è®¤å¯¹è¯æ¡†æ ‡é¢˜
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue("")]
-        [Description("È·ÈÏ¶Ô»°¿ò±êÌâ")]
+        [Description("ç¡®è®¤å¯¹è¯æ¡†æ ‡é¢˜")]
         public string ConfirmTitle
         {
             get
@@ -407,11 +407,11 @@ namespace FineUI
         private string _confirmText = String.Empty;
 
         /// <summary>
-        /// È·ÈÏ¶Ô»°¿òÄÚÈİ
+        /// ç¡®è®¤å¯¹è¯æ¡†å†…å®¹
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue("")]
-        [Description("È·ÈÏ¶Ô»°¿òÄÚÈİ")]
+        [Description("ç¡®è®¤å¯¹è¯æ¡†å†…å®¹")]
         public string ConfirmText
         {
             get
@@ -427,11 +427,11 @@ namespace FineUI
         private MessageBoxIcon _confirmIcon = MessageBoxIcon.Warning;
 
         /// <summary>
-        /// È·ÈÏ¶Ô»°¿òÌáÊ¾Í¼±ê
+        /// ç¡®è®¤å¯¹è¯æ¡†æç¤ºå›¾æ ‡
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue(MessageBoxIcon.Warning)]
-        [Description("È·ÈÏ¶Ô»°¿òÌáÊ¾Í¼±ê")]
+        [Description("ç¡®è®¤å¯¹è¯æ¡†æç¤ºå›¾æ ‡")]
         public MessageBoxIcon ConfirmIcon
         {
             get
@@ -447,11 +447,11 @@ namespace FineUI
         private Target _confirmTarget = Target.Self;
 
         /// <summary>
-        /// È·ÈÏ¶Ô»°¿òµ¯³öÎ»ÖÃ
+        /// ç¡®è®¤å¯¹è¯æ¡†å¼¹å‡ºä½ç½®
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue(Target.Self)]
-        [Description("È·ÈÏ¶Ô»°¿òµ¯³öÎ»ÖÃ")]
+        [Description("ç¡®è®¤å¯¹è¯æ¡†å¼¹å‡ºä½ç½®")]
         public Target ConfirmTarget
         {
             get
@@ -471,11 +471,11 @@ namespace FineUI
         private string _commandName = String.Empty;
 
         /// <summary>
-        /// ÃüÁîÃû³Æ
+        /// å‘½ä»¤åç§°
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue("")]
-        [Description("ÃüÁîÃû³Æ")]
+        [Description("å‘½ä»¤åç§°")]
         public string CommandName
         {
             get
@@ -491,11 +491,11 @@ namespace FineUI
         private string _commandArgument = String.Empty;
 
         /// <summary>
-        /// ÃüÁî²ÎÊı
+        /// å‘½ä»¤å‚æ•°
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue("")]
-        [Description("ÃüÁî²ÎÊı")]
+        [Description("å‘½ä»¤å‚æ•°")]
         public string CommandArgument
         {
             get
@@ -516,11 +516,11 @@ namespace FineUI
         private object _enableAjax = null;
 
         /// <summary>
-        /// ÊÇ·ñÆôÓÃAJAX
+        /// æ˜¯å¦å¯ç”¨AJAX
         /// </summary>
         [Category(CategoryName.BASEOPTIONS)]
         [DefaultValue(true)]
-        [Description("ÊÇ·ñÆôÓÃAJAX")]
+        [Description("æ˜¯å¦å¯ç”¨AJAX")]
         public override bool EnableAjax
         {
             get
@@ -678,7 +678,7 @@ namespace FineUI
         #region OnFirstPreRender
 
         /// <summary>
-        /// äÖÈ¾ HTML Ö®Ç°µ÷ÓÃ£¨Ò³ÃæµÚÒ»´Î¼ÓÔØ»òÕßÆÕÍ¨»Ø·¢£©
+        /// æ¸²æŸ“ HTML ä¹‹å‰è°ƒç”¨ï¼ˆé¡µé¢ç¬¬ä¸€æ¬¡åŠ è½½æˆ–è€…æ™®é€šå›å‘ï¼‰
         /// </summary>
         protected override void OnFirstPreRender()
         {

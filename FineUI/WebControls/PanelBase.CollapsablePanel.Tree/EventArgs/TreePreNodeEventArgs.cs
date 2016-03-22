@@ -1,18 +1,18 @@
-
+ï»¿
 #region Comment
 
 /*
- * Project£º    FineUIPro
+ * Projectï¼š    FineUIPro
  * 
  * FileName:    TreePreNodeEventArgs.cs
  * CreatedOn:   2014-09-13
  * CreatedBy:   30372245@qq.com
  * 
  * 
- * Description£º
+ * Descriptionï¼š
  *      ->
  *   
- * History£º
+ * Historyï¼š
  *      ->
  * 
  * 
@@ -33,14 +33,14 @@ using System.Xml;
 namespace FineUI
 {
     /// <summary>
-    /// Ê÷½ÚµãÔ¤°ó¶¨ÊÂ¼ş²ÎÊı
+    /// æ ‘èŠ‚ç‚¹é¢„ç»‘å®šäº‹ä»¶å‚æ•°
     /// </summary>
     public class TreePreNodeEventArgs : EventArgs
     {
         private bool _cancelled = false;
 
         /// <summary>
-        /// ÊÇ·ñÈ¡ÏûÌí¼Ó±¾½Úµã
+        /// æ˜¯å¦å–æ¶ˆæ·»åŠ æœ¬èŠ‚ç‚¹
         /// </summary>
         public bool Cancelled
         {
@@ -53,7 +53,7 @@ namespace FineUI
         private XmlNode _xmlNode;
 
         /// <summary>
-        /// Ê÷½ÚµãµÄÊı¾İÔ´
+        /// æ ‘èŠ‚ç‚¹çš„æ•°æ®æº
         /// </summary>
         public XmlNode XmlNode
         {
@@ -62,9 +62,9 @@ namespace FineUI
         }
 
         /// <summary>
-        /// ¹¹Ôìº¯Êı
+        /// æ„é€ å‡½æ•°
         /// </summary>
-        /// <param name="xmlNode">Ê÷½ÚµãµÄÊı¾İÔ´</param>
+        /// <param name="xmlNode">æ ‘èŠ‚ç‚¹çš„æ•°æ®æº</param>
         public TreePreNodeEventArgs(XmlNode xmlNode)
         {
             _xmlNode = xmlNode;

@@ -1,18 +1,18 @@
-
+ï»¿
 #region Comment
 
 /*
- * Project£º    FineUI
+ * Projectï¼š    FineUI
  * 
  * FileName:    GridGroupColumn.cs
  * CreatedOn:   2012-05-29
  * CreatedBy:   30372245@qq.com
  * 
  * 
- * Description£º
+ * Descriptionï¼š
  *      ->
  *   
- * History£º
+ * Historyï¼š
  *      ->
  * 
  * 
@@ -40,7 +40,7 @@ using System.ComponentModel.Design;
 namespace FineUI
 {
     /// <summary>
-    /// ±í¸ñ·Ö×éÁĞ
+    /// è¡¨æ ¼åˆ†ç»„åˆ—
     /// </summary>
     [ToolboxItem(false)]
     [ParseChildren(true)]
@@ -54,11 +54,11 @@ namespace FineUI
         private string _headerText = String.Empty;
 
         /// <summary>
-        /// ±êÌâÀ¸ÏÔÊ¾ÎÄ×Ö
+        /// æ ‡é¢˜æ æ˜¾ç¤ºæ–‡å­—
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue("")]
-        [Description("±êÌâÀ¸ÏÔÊ¾ÎÄ×Ö")]
+        [Description("æ ‡é¢˜æ æ˜¾ç¤ºæ–‡å­—")]
         public string HeaderText
         {
             get
@@ -74,11 +74,11 @@ namespace FineUI
         private TextAlign _textalign = TextAlign.Left;
 
         /// <summary>
-        /// ÎÄ±¾µÄÅÅÁĞÎ»ÖÃ
+        /// æ–‡æœ¬çš„æ’åˆ—ä½ç½®
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue(TextAlign.Left)]
-        [Description("ÎÄ±¾µÄÅÅÁĞÎ»ÖÃ")]
+        [Description("æ–‡æœ¬çš„æ’åˆ—ä½ç½®")]
         public TextAlign TextAlign
         {
             get
@@ -99,7 +99,7 @@ namespace FineUI
         private GridGroupColumnCollection _groupColumns;
 
         /// <summary>
-        /// ·Ö×éÁĞÊı¾İ
+        /// åˆ†ç»„åˆ—æ•°æ®
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [NotifyParentProperty(true)]
@@ -121,7 +121,7 @@ namespace FineUI
         private GridColumnCollection _columns;
 
         /// <summary>
-        /// ÁĞÊı¾İ
+        /// åˆ—æ•°æ®
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [NotifyParentProperty(true)]

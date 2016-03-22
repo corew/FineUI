@@ -1,18 +1,18 @@
-
+ï»¿
 #region Comment
 
 /*
- * Project£º    FineUI
+ * Projectï¼š    FineUI
  * 
  * FileName:    GridRowEventArgs.cs
  * CreatedOn:   2008-06-23
  * CreatedBy:   30372245@qq.com
  * 
  * 
- * Description£º
+ * Descriptionï¼š
  *      ->
  *   
- * History£º
+ * Historyï¼š
  *      ->
  * 
  * 
@@ -32,7 +32,7 @@ using System.Web.UI;
 namespace FineUI
 {
     /// <summary>
-    /// ±í¸ñĞĞ°ó¶¨ÊÂ¼ş²ÎÊı
+    /// è¡¨æ ¼è¡Œç»‘å®šäº‹ä»¶å‚æ•°
     /// </summary>
     public class GridRowEventArgs : EventArgs
     {
@@ -40,7 +40,7 @@ namespace FineUI
         private GridRow _row;
 
         /// <summary>
-        /// µ±Ç°ĞĞ
+        /// å½“å‰è¡Œ
         /// </summary>
         public GridRow Row
         {
@@ -48,7 +48,7 @@ namespace FineUI
         }
 
         /// <summary>
-        /// ±¾ĞĞ¸÷ÁĞµÄÖµ£¨äÖÈ¾ºóµÄHTMLÆ¬¶Î£©
+        /// æœ¬è¡Œå„åˆ—çš„å€¼ï¼ˆæ¸²æŸ“åçš„HTMLç‰‡æ®µï¼‰
         /// </summary>
         public object[] Values
         {
@@ -57,7 +57,7 @@ namespace FineUI
 
 
         /// <summary>
-        /// ĞĞÊı¾İÔ´
+        /// è¡Œæ•°æ®æº
         /// </summary>
         public object DataItem
         {
@@ -66,7 +66,7 @@ namespace FineUI
 
 
         /// <summary>
-        /// ĞĞË÷Òı
+        /// è¡Œç´¢å¼•
         /// </summary>
         public int RowIndex
         {
@@ -74,7 +74,7 @@ namespace FineUI
         }
 
         /// <summary>
-        /// ĞĞID
+        /// è¡ŒID
         /// </summary>
         public string RowID
         {
@@ -83,9 +83,9 @@ namespace FineUI
 
 
         /// <summary>
-        /// ¹¹Ôìº¯Êı
+        /// æ„é€ å‡½æ•°
         /// </summary>
-        /// <param name="row">ĞĞ</param>
+        /// <param name="row">è¡Œ</param>
         public GridRowEventArgs(GridRow row)
         {
             _row = row;

@@ -1,18 +1,18 @@
-
+ï»¿
 #region Comment
 
 /*
- * Project£º    FineUI
+ * Projectï¼š    FineUI
  * 
  * FileName:    GridPreRowEventArgs.cs
  * CreatedOn:   2008-06-27
  * CreatedBy:   30372245@qq.com
  * 
  * 
- * Description£º
+ * Descriptionï¼š
  *      ->
  *   
- * History£º
+ * Historyï¼š
  *      ->
  * 
  * 
@@ -32,14 +32,14 @@ using System.Web.UI;
 namespace FineUI
 {
     /// <summary>
-    /// ±í¸ñĞĞÔ¤°ó¶¨ÊÂ¼ş²ÎÊı
+    /// è¡¨æ ¼è¡Œé¢„ç»‘å®šäº‹ä»¶å‚æ•°
     /// </summary>
     public class GridPreRowEventArgs : EventArgs
     {
         private bool _cancelled = false;
 
         /// <summary>
-        /// ÊÇ·ñÈ¡ÏûÌí¼Ó±¾½Úµã
+        /// æ˜¯å¦å–æ¶ˆæ·»åŠ æœ¬èŠ‚ç‚¹
         /// </summary>
         public bool Cancelled
         {
@@ -51,7 +51,7 @@ namespace FineUI
         private object _dataItem;
 
         /// <summary>
-        /// ĞĞÊı¾İÔ´£¨Èç¹ûÊı¾İÔ´ÎªDataTable£¬ÔòDataItemÎªDataRowView£©
+        /// è¡Œæ•°æ®æºï¼ˆå¦‚æœæ•°æ®æºä¸ºDataTableï¼Œåˆ™DataItemä¸ºDataRowViewï¼‰
         /// </summary>
         public object DataItem
         {
@@ -62,7 +62,7 @@ namespace FineUI
         private int _rowIndex;
 
         /// <summary>
-        /// ĞĞË÷Òı
+        /// è¡Œç´¢å¼•
         /// </summary>
         public int RowIndex
         {
@@ -71,10 +71,10 @@ namespace FineUI
 
 
         /// <summary>
-        /// ¹¹Ôìº¯Êı
+        /// æ„é€ å‡½æ•°
         /// </summary>
-        /// <param name="dataItem">ĞĞÊı¾İÔ´</param>
-        /// <param name="rowIndex">ĞĞË÷Òı</param>
+        /// <param name="dataItem">è¡Œæ•°æ®æº</param>
+        /// <param name="rowIndex">è¡Œç´¢å¼•</param>
         public GridPreRowEventArgs(object dataItem, int rowIndex)
         {
             _dataItem = dataItem;

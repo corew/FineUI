@@ -1,18 +1,18 @@
-
+ï»¿
 #region Comment
 
 /*
- * Project£º    FineUI
+ * Projectï¼š    FineUI
  * 
  * FileName:    TreeCommandEventArgs.cs
  * CreatedOn:   2008-07-22
  * CreatedBy:   30372245@qq.com
  * 
  * 
- * Description£º
+ * Descriptionï¼š
  *      ->
  *   
- * History£º
+ * Historyï¼š
  *      ->
  * 
  * 
@@ -33,14 +33,14 @@ namespace FineUI
 {
 
     /// <summary>
-    /// Ê÷½ÚµãÃüÁîÊÂ¼ş²ÎÊı
+    /// æ ‘èŠ‚ç‚¹å‘½ä»¤äº‹ä»¶å‚æ•°
     /// </summary>
     public class TreeCommandEventArgs : EventArgs
     {
         private TreeNode _node;
 
         /// <summary>
-        /// Ê÷ÊµÀı
+        /// æ ‘å®ä¾‹
         /// </summary>
         public TreeNode Node
         {
@@ -51,7 +51,7 @@ namespace FineUI
         private string _nodeID;
 
         /// <summary>
-        /// Ê÷½ÚµãID
+        /// æ ‘èŠ‚ç‚¹ID
         /// </summary>
         public string NodeID
         {
@@ -63,7 +63,7 @@ namespace FineUI
         private string _commandName;
 
         /// <summary>
-        /// ÃüÁîÃû³Æ
+        /// å‘½ä»¤åç§°
         /// </summary>
         public string CommandName
         {
@@ -75,7 +75,7 @@ namespace FineUI
         private string _commandArgument;
 
         /// <summary>
-        /// ÃüÁî²ÎÊı
+        /// å‘½ä»¤å‚æ•°
         /// </summary>
         public string CommandArgument
         {
@@ -85,11 +85,11 @@ namespace FineUI
 
 
         /// <summary>
-        /// ¹¹Ôìº¯Êı
+        /// æ„é€ å‡½æ•°
         /// </summary>
-        /// <param name="node">Ê÷½Úµã</param>
-        /// <param name="commandName">ÃüÁîÃû³Æ</param>
-        /// <param name="commandArgument">ÃüÁî²ÎÊı</param>
+        /// <param name="node">æ ‘èŠ‚ç‚¹</param>
+        /// <param name="commandName">å‘½ä»¤åç§°</param>
+        /// <param name="commandArgument">å‘½ä»¤å‚æ•°</param>
         public TreeCommandEventArgs(TreeNode node, string commandName, string commandArgument)
         {
             _node = node;

@@ -1,18 +1,18 @@
-
+ï»¿
 #region Comment
 
 /*
- * Project£º    FineUI
+ * Projectï¼š    FineUI
  * 
  * FileName:    GridPageEventArgs.cs
  * CreatedOn:   2008-06-25
  * CreatedBy:   30372245@qq.com
  * 
  * 
- * Description£º
+ * Descriptionï¼š
  *      ->
  *   
- * History£º
+ * Historyï¼š
  *      ->
  * 
  * 
@@ -32,7 +32,7 @@ using System.Web.UI;
 namespace FineUI
 {
     /// <summary>
-    /// ±í¸ñ·ÖÒ³ÊÂ¼ş²ÎÊı
+    /// è¡¨æ ¼åˆ†é¡µäº‹ä»¶å‚æ•°
     /// </summary>
     public class GridPageEventArgs : EventArgs
     {
@@ -40,7 +40,7 @@ namespace FineUI
         private int _newPageIndex;
 
         /// <summary>
-        /// ĞÂÒ³ÃæµÄË÷Òı
+        /// æ–°é¡µé¢çš„ç´¢å¼•
         /// </summary>
         public int NewPageIndex
         {
@@ -50,9 +50,9 @@ namespace FineUI
 
 
         /// <summary>
-        /// ¹¹Ôìº¯Êı
+        /// æ„é€ å‡½æ•°
         /// </summary>
-        /// <param name="newPageIndex">ĞÂÒ³ÃæµÄË÷Òı</param>
+        /// <param name="newPageIndex">æ–°é¡µé¢çš„ç´¢å¼•</param>
         public GridPageEventArgs(int newPageIndex)
         {
             _newPageIndex = newPageIndex;

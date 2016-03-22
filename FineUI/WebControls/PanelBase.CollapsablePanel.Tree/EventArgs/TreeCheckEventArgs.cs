@@ -1,18 +1,18 @@
-
+ï»¿
 #region Comment
 
 /*
- * Project£º    FineUI
+ * Projectï¼š    FineUI
  * 
  * FileName:    TreeCheckEventArgs.cs
  * CreatedOn:   2008-09-14
  * CreatedBy:   30372245@qq.com
  * 
  * 
- * Description£º
+ * Descriptionï¼š
  *      ->
  *   
- * History£º
+ * Historyï¼š
  *      ->
  * 
  * 
@@ -32,14 +32,14 @@ using System.Web.UI;
 namespace FineUI
 {
     /// <summary>
-    /// Ê÷½ÚµãÑ¡ÖĞÊÂ¼ş²ÎÊı
+    /// æ ‘èŠ‚ç‚¹é€‰ä¸­äº‹ä»¶å‚æ•°
     /// </summary>
     public class TreeCheckEventArgs : EventArgs
     {
         private TreeNode _node;
 
         /// <summary>
-        /// Ê÷½Úµã
+        /// æ ‘èŠ‚ç‚¹
         /// </summary>
         public TreeNode Node
         {
@@ -51,7 +51,7 @@ namespace FineUI
         private string _nodeID;
 
         /// <summary>
-        /// ½ÚµãID
+        /// èŠ‚ç‚¹ID
         /// </summary>
         public string NodeID
         {
@@ -62,7 +62,7 @@ namespace FineUI
         private bool _checked;
 
         /// <summary>
-        /// ÊÇ·ñÑ¡ÖĞ
+        /// æ˜¯å¦é€‰ä¸­
         /// </summary>
         public bool Checked
         {
@@ -71,10 +71,10 @@ namespace FineUI
         }
 
         /// <summary>
-        /// ¹¹Ôìº¯Êı
+        /// æ„é€ å‡½æ•°
         /// </summary>
-        /// <param name="node">Ê÷½Úµã</param>
-        /// <param name="isChecked">ÊÇ·ñÑ¡ÖĞ</param>
+        /// <param name="node">æ ‘èŠ‚ç‚¹</param>
+        /// <param name="isChecked">æ˜¯å¦é€‰ä¸­</param>
         public TreeCheckEventArgs(TreeNode node, bool isChecked)
         {
             _node = node;

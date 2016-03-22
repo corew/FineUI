@@ -1,18 +1,18 @@
-
+ï»¿
 #region Comment
 
 /*
- * Project£º    FineUI
+ * Projectï¼š    FineUI
  * 
  * FileName:    ConfigSection.cs
  * CreatedOn:   2008-04-07
  * CreatedBy:   30372245@qq.com
  * 
  * 
- * Description£º
+ * Descriptionï¼š
  *      ->
  *   
- * History£º
+ * Historyï¼š
  *       
  * 
  * 
@@ -29,12 +29,12 @@ using System.Configuration;
 namespace FineUI
 {
     /// <summary>
-    /// FineUIÔÚWeb.configÖĞµÄÅäÖÃ½Ú
+    /// FineUIåœ¨Web.configä¸­çš„é…ç½®èŠ‚
     /// </summary>
     public class ConfigSection : ConfigurationSection
     {
         /// <summary>
-        /// Ö÷Ìâ
+        /// ä¸»é¢˜
         /// </summary>
         [ConfigurationProperty(ConfigPropertyName.THEME, DefaultValue = ConfigPropertyValue.THEME_DEFAULT)]
         public string Theme
@@ -50,7 +50,7 @@ namespace FineUI
         }
 
         /// <summary>
-        /// ÓïÑÔ
+        /// è¯­è¨€
         /// </summary>
         [ConfigurationProperty(ConfigPropertyName.LANGUAGE, DefaultValue = ConfigPropertyValue.LANGUAGE_DEFAULT_STRING)]
         public string Language
@@ -66,7 +66,7 @@ namespace FineUI
         }
 
         /// <summary>
-        /// ±íµ¥ÑéÖ¤ÏûÏ¢µÄÌáÊ¾Î»ÖÃ
+        /// è¡¨å•éªŒè¯æ¶ˆæ¯çš„æç¤ºä½ç½®
         /// </summary>
         [ConfigurationProperty(ConfigPropertyName.FROMMESSAGETARGET, DefaultValue = ConfigPropertyValue.FORM_MESSAGETARGET_DEFAULT_STRING)]
         public string FormMessageTarget
@@ -82,7 +82,7 @@ namespace FineUI
         }
 
         /// <summary>
-        /// ±íµ¥ĞĞ×ÓÏîÖ®¼äµÄ¼ä¾à
+        /// è¡¨å•è¡Œå­é¡¹ä¹‹é—´çš„é—´è·
         /// </summary>
         [ConfigurationProperty(ConfigPropertyName.FORMROWITEMSSPACE, DefaultValue = ConfigPropertyValue.FORMROW_ITEMSSPACE_DEFAULT)]
         public int FormRowItemsSpace
@@ -99,7 +99,7 @@ namespace FineUI
 
 
         /// <summary>
-        /// ±íµ¥ÖĞ±êÇ©µÄÎ»ÖÃ
+        /// è¡¨å•ä¸­æ ‡ç­¾çš„ä½ç½®
         /// </summary>
         [ConfigurationProperty(ConfigPropertyName.FORMLABELALIGN, DefaultValue = ConfigPropertyValue.FORM_LABELALIGN_DEFAULT_STRING)]
         public string FormLabelAlign
@@ -115,7 +115,7 @@ namespace FineUI
         }
 
         /// <summary>
-        /// ±íµ¥¿Ø¼şÓÒ²à¾àÀë±ß½çµÄ¾àÀë
+        /// è¡¨å•æ§ä»¶å³ä¾§è·ç¦»è¾¹ç•Œçš„è·ç¦»
         /// </summary>
         [ConfigurationProperty(ConfigPropertyName.FORMOFFSETRIGHT, DefaultValue = ConfigPropertyValue.FORM_OFFSETRIGHT_DEFAULT)]
         public int FormOffsetRight
@@ -131,7 +131,7 @@ namespace FineUI
         }
 
         /// <summary>
-        /// ±íµ¥¿Ø¼ş±êÇ©µÄ¿í¶È
+        /// è¡¨å•æ§ä»¶æ ‡ç­¾çš„å®½åº¦
         /// </summary>
         [ConfigurationProperty(ConfigPropertyName.FORMLABELWIDTH, DefaultValue = ConfigPropertyValue.FORM_LABELWIDTH_DEFAULT)]
         public int FormLabelWidth
@@ -147,7 +147,7 @@ namespace FineUI
         }
 
         /// <summary>
-        /// ±íµ¥¿Ø¼ş±êÇ©µÄ·Ö¸ô·û
+        /// è¡¨å•æ§ä»¶æ ‡ç­¾çš„åˆ†éš”ç¬¦
         /// </summary>
         [ConfigurationProperty(ConfigPropertyName.FORMLABELSEPARATOR, DefaultValue = ConfigPropertyValue.FORM_LABELSEPARATOR_DEFAULT)]
         public string FormLabelSeparator
@@ -163,7 +163,7 @@ namespace FineUI
         }
 
         /// <summary>
-        /// ÆôÓÃAJAX
+        /// å¯ç”¨AJAX
         /// </summary>
         [ConfigurationProperty(ConfigPropertyName.ENABLEAJAX, DefaultValue = ConfigPropertyValue.ENABLE_AJAX_DEFAULT)]
         public bool EnableAjax
@@ -179,7 +179,7 @@ namespace FineUI
         }
 
         /// <summary>
-        /// ÆôÓÃAJAX¼ÓÔØÌáÊ¾ĞÅÏ¢
+        /// å¯ç”¨AJAXåŠ è½½æç¤ºä¿¡æ¯
         /// </summary>
         [ConfigurationProperty(ConfigPropertyName.ENABLEAJAXLOADING, DefaultValue = ConfigPropertyValue.ENABLE_AJAX_LOADING_DEFAULT)]
         public bool EnableAjaxLoading
@@ -195,7 +195,7 @@ namespace FineUI
         }
 
         /// <summary>
-        /// AJAXÌáÊ¾ĞÅÏ¢µÄÀàĞÍ
+        /// AJAXæç¤ºä¿¡æ¯çš„ç±»å‹
         /// </summary>
         [ConfigurationProperty(ConfigPropertyName.AJAXLOADINGTYPE, DefaultValue = ConfigPropertyValue.AJAX_LOADING_TYPE_DEFAULT_STRING)]
         public string AjaxLoadingType
@@ -211,7 +211,7 @@ namespace FineUI
         }
 
         /// <summary>
-        /// ¿Í»§¶ËAJAX³¬Ê±Ê±¼ä
+        /// å®¢æˆ·ç«¯AJAXè¶…æ—¶æ—¶é—´
         /// </summary>
         [ConfigurationProperty(ConfigPropertyName.AJAXTIMEOUT, DefaultValue = ConfigPropertyValue.AJAX_TIMEOUT_DEFAULT)]
         public int AjaxTimeout
@@ -227,7 +227,7 @@ namespace FineUI
         }
 
         /// <summary>
-        /// ÊÇ·ñÆôÓÃ´ó×ÖÌå£¨½«ExtJSËùÓĞ11px×ÖÌå¸ÄÎª12px£©
+        /// æ˜¯å¦å¯ç”¨å¤§å­—ä½“ï¼ˆå°†ExtJSæ‰€æœ‰11pxå­—ä½“æ”¹ä¸º12pxï¼‰
         /// </summary>
         [ConfigurationProperty(ConfigPropertyName.ENABLEBIGFONT, DefaultValue = false)]
         public bool EnableBigFont
@@ -243,7 +243,7 @@ namespace FineUI
         }
 
         /// <summary>
-        /// ÊÇ·ñÆôÓÃµ÷ÊÔÄ£Ê½
+        /// æ˜¯å¦å¯ç”¨è°ƒè¯•æ¨¡å¼
         /// </summary>
         [ConfigurationProperty(ConfigPropertyName.DEBUGMODE, DefaultValue = false)]
         public bool DebugMode
@@ -259,7 +259,7 @@ namespace FineUI
         }
 
         /// <summary>
-        /// JSÎÄ¼ş¼ĞËùÔÚµÄ¸ùÄ¿Â¼
+        /// JSæ–‡ä»¶å¤¹æ‰€åœ¨çš„æ ¹ç›®å½•
         /// </summary>
         [ConfigurationProperty(ConfigPropertyName.JSBASEPATH, DefaultValue = ConfigPropertyValue.JS_BASE_PATH_DEFAULT)]
         public string JSBasePath
@@ -275,7 +275,7 @@ namespace FineUI
         }
 
         /// <summary>
-        /// Í¼±êËùÔÚµÄ¸ùÄ¿Â¼
+        /// å›¾æ ‡æ‰€åœ¨çš„æ ¹ç›®å½•
         /// </summary>
         [ConfigurationProperty(ConfigPropertyName.ICONBASEPATH, DefaultValue = ConfigPropertyValue.ICON_BASE_PATH_DEFAULT)]
         public string IconBasePath
@@ -291,7 +291,7 @@ namespace FineUI
         }
 
         /// <summary>
-        /// ×Ô¶¨ÒåÖ÷ÌâËùÔÚµÄ¸ùÄ¿Â¼
+        /// è‡ªå®šä¹‰ä¸»é¢˜æ‰€åœ¨çš„æ ¹ç›®å½•
         /// </summary>
         [ConfigurationProperty(ConfigPropertyName.CUSTOMTHEMEBASEPATH, DefaultValue = ConfigPropertyValue.CUSTOM_THEME_BASE_PATH_DEFAULT)]
         public string CustomThemeBasePath
@@ -307,7 +307,7 @@ namespace FineUI
         }
 
         /// <summary>
-        /// ×Ô¶¨ÒåÖ÷ÌâÃû³Æ
+        /// è‡ªå®šä¹‰ä¸»é¢˜åç§°
         /// </summary>
         [ConfigurationProperty(ConfigPropertyName.CUSTOMTHEME, DefaultValue = ConfigPropertyValue.CUSTOM_THEME_DEFAULT)]
         public string CustomTheme
@@ -323,7 +323,7 @@ namespace FineUI
         }
 
         /// <summary>
-        /// ÊÇ·ñÆôÓÃFStateÑ¹Ëõ£¨Ä¬ÈÏÎªfalse£©
+        /// æ˜¯å¦å¯ç”¨FStateå‹ç¼©ï¼ˆé»˜è®¤ä¸ºfalseï¼‰
         /// </summary>
         [ConfigurationProperty(ConfigPropertyName.ENABLEFSTATECOMPRESS, DefaultValue = ConfigPropertyValue.ENABLE_FSTATE_COMPRESS)]
         public bool EnableFStateCompress
@@ -340,7 +340,7 @@ namespace FineUI
 
 
         /// <summary>
-        /// ÊÇ·ñÏòÒ³ÃæÊä³öIE=edge±êÊ¶
+        /// æ˜¯å¦å‘é¡µé¢è¾“å‡ºIE=edgeæ ‡è¯†
         /// </summary>
         [ConfigurationProperty(ConfigPropertyName.IEEDGE, DefaultValue = true)]
         public bool IEEdge
@@ -357,7 +357,7 @@ namespace FineUI
 
 
         /// <summary>
-        /// ÊÇ·ñÆôÓÃ±íµ¥¸Ä±äÈ·ÈÏ¶Ô»°¿ò
+        /// æ˜¯å¦å¯ç”¨è¡¨å•æ”¹å˜ç¡®è®¤å¯¹è¯æ¡†
         /// </summary>
         [ConfigurationProperty(ConfigPropertyName.ENABLEFORMCHANGECONFIRM, DefaultValue = ConfigPropertyValue.ENABLE_FORMCHANGECONFIRM_DEFAULT)]
         public bool EnableFormChangeConfirm

@@ -1,4 +1,4 @@
-using System;
+锘縰sing System;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Drawing.Imaging;
@@ -8,7 +8,7 @@ using System.Drawing.Text;
 namespace CaptchaImage
 {
     /// <summary>
-    /// 这个生成验证码图片的代码来自：http://www.codeproject.com/KB/aspnet/CaptchaImage.aspx
+    /// 杩欎釜鐢熸垚楠岃瘉鐮佸浘鐗囩殑浠ｇ爜鏉ヨ嚜锛歨ttp://www.codeproject.com/KB/aspnet/CaptchaImage.aspx
     /// </summary>
     public class CaptchaImage
     {

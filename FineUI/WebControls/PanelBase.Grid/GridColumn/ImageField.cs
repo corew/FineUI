@@ -1,18 +1,18 @@
-
+ï»¿
 #region Comment
 
 /*
- * Project£º    FineUI
+ * Projectï¼š    FineUI
  * 
  * FileName:    ImageField.cs
  * CreatedOn:   2008-05-28
  * CreatedBy:   30372245@qq.com
  * 
  * 
- * Description£º
+ * Descriptionï¼š
  *      ->
  *   
- * History£º
+ * Historyï¼š
  *      ->
  * 
  * 
@@ -38,7 +38,7 @@ using System.Reflection;
 namespace FineUI
 {
     /// <summary>
-    /// ±í¸ñÍ¼Æ¬ÁĞ
+    /// è¡¨æ ¼å›¾ç‰‡åˆ—
     /// </summary>
     [ToolboxItem(false)]
     [ParseChildren(true)]
@@ -51,11 +51,11 @@ namespace FineUI
         private string _dataImageUrlField = String.Empty;
 
         /// <summary>
-        /// Í¼Æ¬µØÖ·×Ö¶Î
+        /// å›¾ç‰‡åœ°å€å­—æ®µ
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue("")]
-        [Description("Í¼Æ¬µØÖ·×Ö¶Î")]
+        [Description("å›¾ç‰‡åœ°å€å­—æ®µ")]
         public string DataImageUrlField
         {
             get
@@ -73,11 +73,11 @@ namespace FineUI
         private string _dataImageUrlFormatString = String.Empty;
 
         /// <summary>
-        /// Í¼Æ¬µØÖ·×Ö¶Î¸ñÊ½»¯×Ö·û´®
+        /// å›¾ç‰‡åœ°å€å­—æ®µæ ¼å¼åŒ–å­—ç¬¦ä¸²
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue("")]
-        [Description("Í¼Æ¬µØÖ·×Ö¶Î¸ñÊ½»¯×Ö·û´®")]
+        [Description("å›¾ç‰‡åœ°å€å­—æ®µæ ¼å¼åŒ–å­—ç¬¦ä¸²")]
         public string DataImageUrlFormatString
         {
             get
@@ -94,11 +94,11 @@ namespace FineUI
         private Unit _imageWidth = Unit.Empty;
 
         /// <summary>
-        /// Í¼Æ¬µÄ¿í¶È
+        /// å›¾ç‰‡çš„å®½åº¦
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue(typeof(Unit), "")]
-        [Description("Í¼Æ¬µÄ¿í¶È")]
+        [Description("å›¾ç‰‡çš„å®½åº¦")]
         public Unit ImageWidth
         {
             get
@@ -114,11 +114,11 @@ namespace FineUI
         private Unit _imageHeight = Unit.Empty;
 
         /// <summary>
-        /// Í¼Æ¬µÄ¸ß¶È
+        /// å›¾ç‰‡çš„é«˜åº¦
         /// </summary>
         [Category(CategoryName.OPTIONS)]
         [DefaultValue(typeof(Unit), "")]
-        [Description("Í¼Æ¬µÄ¸ß¶È")]
+        [Description("å›¾ç‰‡çš„é«˜åº¦")]
         public Unit ImageHeight
         {
             get
@@ -208,7 +208,7 @@ namespace FineUI
         #region OnFirstPreRender
 
         /// <summary>
-        /// äÖÈ¾ HTML Ö®Ç°µ÷ÓÃ£¨Ò³ÃæµÚÒ»´Î¼ÓÔØ»òÕßÆÕÍ¨»Ø·¢£©
+        /// æ¸²æŸ“ HTML ä¹‹å‰è°ƒç”¨ï¼ˆé¡µé¢ç¬¬ä¸€æ¬¡åŠ è½½æˆ–è€…æ™®é€šå›å‘ï¼‰
         /// </summary>
         protected override void OnFirstPreRender()
         {

@@ -1,18 +1,18 @@
-
+ï»¿
 #region Comment
 
 /*
- * Project£º    FineUI
+ * Projectï¼š    FineUI
  * 
  * FileName:    CheckedEventArgs.cs
  * CreatedOn:   2013-10-22
  * CreatedBy:   30372245@qq.com
  * 
  * 
- * Description£º
+ * Descriptionï¼š
  *      ->
  *   
- * History£º
+ * Historyï¼š
  *      ->
  * 
  * 
@@ -32,7 +32,7 @@ using System.Web.UI;
 namespace FineUI
 {
     /// <summary>
-    /// ¸´Ñ¡¿ò/µ¥Ñ¡¿ò/¸´Ñ¡¿ò²Ëµ¥°´Å¥µÄÊÂ¼ş²ÎÊı
+    /// å¤é€‰æ¡†/å•é€‰æ¡†/å¤é€‰æ¡†èœå•æŒ‰é’®çš„äº‹ä»¶å‚æ•°
     /// </summary>
     public class CheckedEventArgs : EventArgs
     {
@@ -40,7 +40,7 @@ namespace FineUI
         private bool _checked;
 
         /// <summary>
-        /// ÊÇ·ñÑ¡ÖĞ
+        /// æ˜¯å¦é€‰ä¸­
         /// </summary>
         public bool Checked
         {
@@ -50,9 +50,9 @@ namespace FineUI
 
 
         /// <summary>
-        /// ¹¹Ôìº¯Êı
+        /// æ„é€ å‡½æ•°
         /// </summary>
-        /// <param name="isChecked">ÊÇ·ñÑ¡ÖĞ</param>
+        /// <param name="isChecked">æ˜¯å¦é€‰ä¸­</param>
         public CheckedEventArgs(bool isChecked)
         {
             _checked = isChecked;

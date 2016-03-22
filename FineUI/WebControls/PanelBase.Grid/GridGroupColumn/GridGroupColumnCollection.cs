@@ -1,18 +1,18 @@
-
+ï»¿
 #region Comment
 
 /*
- * Project£º    FineUI
+ * Projectï¼š    FineUI
  * 
  * FileName:    GridGroupColumnCollection.cs
  * CreatedOn:   2012-05-29
  * CreatedBy:   30372245@qq.com
  * 
  * 
- * Description£º
+ * Descriptionï¼š
  *      ->
  *   
- * History£º
+ * Historyï¼š
  *      ->
  * 
  * 
@@ -33,14 +33,14 @@ using System.Collections.ObjectModel;
 namespace FineUI
 {
     /// <summary>
-    /// ±í¸ñ·Ö×éÁĞ¼¯ºÏ
+    /// è¡¨æ ¼åˆ†ç»„åˆ—é›†åˆ
     /// </summary>
     public class GridGroupColumnCollection : BaseCollection<GridGroupColumn>
     {
          /// <summary>
-        /// ¹¹Ôìº¯Êı
+        /// æ„é€ å‡½æ•°
         /// </summary>
-        /// <param name="parent">¸¸¿Ø¼şÊµÀı</param>
+        /// <param name="parent">çˆ¶æ§ä»¶å®ä¾‹</param>
         public GridGroupColumnCollection(ControlBase parent)
             : base(parent)
         {
@@ -51,9 +51,9 @@ namespace FineUI
         private Grid _grid;
 
         /// <summary>
-        /// ¹¹Ôìº¯Êı
+        /// æ„é€ å‡½æ•°
         /// </summary>
-        /// <param name="grid">±í¸ñÊµÀı</param>
+        /// <param name="grid">è¡¨æ ¼å®ä¾‹</param>
         public GridGroupColumnCollection(Grid grid)
         {
             _grid = grid;
@@ -74,7 +74,7 @@ namespace FineUI
 
 
         /// <summary>
-        /// ÉèÖÃÃ¿¸ö×Ó½ÚµãµÄGridÊµÀı
+        /// è®¾ç½®æ¯ä¸ªå­èŠ‚ç‚¹çš„Gridå®ä¾‹
         /// </summary>
         /// <param name="node"></param>
         private void ResolveChildren(GridGroupColumn column)
