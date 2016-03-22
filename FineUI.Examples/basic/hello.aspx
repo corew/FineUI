@@ -15,6 +15,16 @@
         <br />
         <f:Button Text="在顶层窗口弹出对话框" runat="server" ID="btnHello2" OnClick="btnHello2_Click">
         </f:Button>
+        <br />
+        <br />
+        <f:Button Text="在顶层窗口弹出提示框" runat="server" ID="btnHello3" OnClick="btnHello3_Click">
+        </f:Button>
+        <br />
+        <br />
+        <f:Button Text="在顶层窗口弹出选项框" runat="server" ID="btnHello4" OnClick="btnHello4_Click">
+        </f:Button>
+        <f:Button Text="在顶层窗口弹出选项框" Hidden="True" runat="server" ID="btnPostback" OnClick="btnPostback_Click">
+        </f:Button>
     </form>
 </body>
 </html>

@@ -22,5 +22,44 @@ namespace FineUI.Examples.basic
         {
             Alert.ShowInTop("你好 FineUI！", MessageBoxIcon.Information);
         }
+
+        protected void btnHello3_Click(object sender, EventArgs e)
+        {
+            Notify.Show("你好 FineUI！", "", NotifyIcon.Success);
+        }
+
+        protected void btnHello4_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("你好 FineUI！", "", MessageBoxIcon.Question, MessageBoxButtons.YESNOCANCEL,
+                yesScript: btnPostback.GetPostBackEventReference("yes"),
+                noScript: btnPostback.GetPostBackEventReference("no"),
+                cancelScript: btnPostback.GetPostBackEventReference("cancel"));
+        }
+
+        protected void btnPostback_Click(object sender, EventArgs e)
+        {
+            var argument = Request.Params["__EVENTARGUMENT"];
+
+            if (string.IsNullOrEmpty(argument))
+            {
+                return;
+            }
+
+            switch (argument)
+            {
+                case "yes":
+                    Notify.Show("yes");
+                    break;
+                case "no":
+                    Notify.Show("no");
+                    break;
+                case "cancel":
+                    Notify.Show("cancel");
+                    break;
+                default:
+                    // ignored
+                    break;
+            }
+        }
     }
 }
